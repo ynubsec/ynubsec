@@ -1,73 +1,50 @@
-<svg width="1000" height="480" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Solid Architect Foundation -->
-  <rect width="1000" height="480" rx="30" fill="#020202"/>
-  <rect x="2" y="2" width="996" height="476" rx="28" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.1"/>
-
+<svg width="1000" height="250" viewBox="0 0 1000 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- The Void (God Type Minimalism) -->
+  <rect width="1000" height="250" rx="30" fill="#010101"/>
+  <rect x="1" y="1" width="998" height="248" rx="29" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.1"/>
+  
   <defs>
-    <!-- Soft Dev Glow -->
-    <radialGradient id="dev_glow" cx="500" cy="180" r="400" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00FF9C" stop-opacity="0.08"/>
+    <!-- Divine Energy (Soft Radial Aura) -->
+    <radialGradient id="divine_aura" cx="500" cy="125" r="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FF9C" stop-opacity="0.1"/>
       <stop offset="1" stop-color="black" stop-opacity="0"/>
     </radialGradient>
-    
-    <linearGradient id="text_fade" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#00FF9C" stop-opacity="0.7"/>
-      <stop offset="1" stop-color="#00FF9C" stop-opacity="0.1"/>
+
+    <!-- Pulsing Soul Beam -->
+    <linearGradient id="soul_beam" x1="0" y1="125" x2="1000" y2="125" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FF9C" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00FF9C" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#00FF9C" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <rect width="1000" height="480" rx="30" fill="url(#dev_glow)"/>
+  <!-- Atmospheric Aura -->
+  <rect width="1000" height="250" rx="30" fill="url(#divine_aura)">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="5s" repeatCount="indefinite"/>
+  </rect>
 
-  <!-- Identity Node (Centered) -->
-  <g transform="translate(500, 100)">
-    <text text-anchor="middle" fill="white" font-family="'Inter', sans-serif" font-size="78" font-weight="950" letter-spacing="-0.04em">
+  <!-- The Horizontal Divide (Minimalist Line) -->
+  <rect y="124" width="1000" height="1" fill="url(#soul_beam)" opacity="0.3"/>
+
+  <!-- Core Divine Identity -->
+  <g transform="translate(500, 125)">
+    <!-- Main Name -->
+    <text text-anchor="middle" y="-15" fill="white" font-family="'Inter', sans-serif" font-size="82" font-weight="950" letter-spacing="-0.04em">
       BISHNU NEUPANE
-      <animate attributeName="letter-spacing" values="-0.04em; 0.02em; -0.04em" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="letter-spacing" values="-0.04em; 0.05em; -0.04em" dur="8s" repeatCount="indefinite"/>
     </text>
-    <text text-anchor="middle" y="45" fill="#00FF9C" font-family="monospace" font-size="16" font-weight="700" letter-spacing="0.4em" opacity="0.9">
+    
+    <!-- Subtitle (Pure Focus) -->
+    <text text-anchor="middle" y="45" fill="#00FF9C" font-family="monospace" font-size="16" font-weight="700" letter-spacing="0.6em" opacity="0.8">
       FRONTEND DEVELOPER • SECURITY RESEARCHER
     </text>
   </g>
 
-  <!-- About Me / Background Section (Clean Dev Style) -->
-  <g transform="translate(100, 220)">
-    <!-- Dividing Line -->
-    <rect width="800" height="1" fill="#00FF9C" opacity="0.15"/>
-
-    <g transform="translate(0, 45)">
-      <!-- Self Demonstration -->
-      <g>
-        <text fill="white" font-family="sans-serif" font-size="22" font-weight="800">Background</text>
-        <text y="30" fill="#8B949E" font-family="sans-serif" font-size="16" line-height="1.5">
-          <tspan x="0" dy="0">I am an 18-year-old developer and researcher from Nepal, specializing in building</tspan>
-          <tspan x="0" dy="25">secure web architectures. My passion lies at the intersection of high-end</tspan>
-          <tspan x="0" dy="25">frontend engineering and offensive security research.</tspan>
-        </text>
-      </g>
-
-      <!-- Technical Focus -->
-      <g transform="translate(0, 120)">
-        <text fill="white" font-family="sans-serif" font-size="22" font-weight="800">Philosophy</text>
-        <text y="30" fill="#8B949E" font-family="sans-serif" font-size="16">
-          <tspan x="0" dy="0">"Learning by breaking, securing by understanding." I believe in dissecting</tspan>
-          <tspan x="0" dy="25">systems from the root to build trust-anchored digital products.</tspan>
-        </text>
-      </g>
-    </g>
+  <!-- Subtle Floating Marks -->
+  <g opacity="0.15" fill="#00FF9C">
+    <circle cx="50" cy="50" r="2"/>
+    <circle cx="950" cy="50" r="2"/>
+    <circle cx="50" cy="200" r="2"/>
+    <circle cx="950" cy="200" r="2"/>
   </g>
-
-  <!-- Dev Terminal Tags -->
-  <g transform="translate(100, 420)">
-    <g>
-      <rect width="140" height="22" rx="4" fill="#00FF9C" fill-opacity="0.05" stroke="#00FF9C" stroke-opacity="0.2"/>
-      <text x="70" y="15" text-anchor="middle" fill="#00FF9C" font-family="monospace" font-size="10" font-weight="800">NEPAL_REGION</text>
-    </g>
-    <g transform="translate(150, 0)">
-      <rect width="140" height="22" rx="4" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
-      <text x="70" y="15" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="10" font-weight="800">SEC_ENGINEERING</text>
-    </g>
-  </g>
-  
-  <!-- Subtle Grid Pattern (Dev Aesthetic) -->
-  <path d="M900 400 L 950 400 M 950 400 L 950 350" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.2"/>
 </svg>
