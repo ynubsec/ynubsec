@@ -6,15 +6,25 @@
   <img src="./bio_card.svg" alt="YNUBSEC BIO" width="100%" />
 </div>
 
-<br>
-
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=ynubsec&color=00FF9C&style=flat-square&label=ACCESS_LOGS" />
 </div>
 
----
+<br>
 
-### ⚡ TECHNICAL ARSENAL
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=vision-friendly-dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=vision-friendly-dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C" height="180" />
+</div>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=vision-friendly-dark&hide_border=true&ring=00FF9C&fire=00FF9C&sideNums=00FF9C&stroke=00FF9C" height="180" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=⚡%20TECHNICAL%20ARSENAL&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
+</div>
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=linux,bash,python,c,js,html,css,react,nodejs,postgres,git,github,vscode,debian,discord,postman,docker,ubuntu" />
@@ -23,22 +33,28 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=vision-friendly-dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=vision-friendly-dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C" height="150" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=vision-friendly-dark&hide_border=true&ring=00FF9C&fire=00FF9C&sideNums=00FF9C&stroke=00FF9C" height="150" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=📊%20ACTIVITY%20GRAPH&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
 </div>
-
----
-
-### 📊 ACTIVITY GRAPH
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ynubsec&bg_color=0a0a0c&color=00FF9C&line=00FF9C&point=FFFFFF&area=true&hide_border=true" width="100%" />
 </div>
 
----
+<br>
 
-### 📬 CONTACT GATEWAY
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=🐍%20CONTRIBUTION%20STREAM&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=📬%20CONTACT%20GATEWAY&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
+</div>
 
 <div align="center">
   <a href="https://linkedin.com/in/ynubsec"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -54,16 +70,8 @@
   <a href="https://www.buymeacoffee.com/ynubsec"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40" /></a>
 </div>
 
----
-
-### 🐍 CONTRIBUTION STREAM
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" />
-</div>
-
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=100&section=footer&theme=dark&fontColor=00FF9C&text=SYSTEM_STATUS:_SECURE&fontSize=24&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&theme=dark&fontColor=00FF9C&text=SYSTEM_STATUS:_SECURE&fontSize=30&animation=twinkling" />
 </div>
