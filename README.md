@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/ynubsec-animated.svg" alt="YNUBSEC ELITE BANNER" width="100%" />
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/ynubsec-animated.svg" alt="YNUB MASTER LOGO" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/bio_card.svg" alt="YNUBSEC CORE BIO" width="100%" />
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/bio_card.svg" alt="BISHNU NEUPANE CORE IDENTITY" width="100%" />
 </div>
 
 <div align="center">
