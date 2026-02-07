@@ -33,7 +33,17 @@
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=📬%20CONTACT%20GATEWAY&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=�%20CONTRIBUTION%20STREAM&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=�📬%20CONTACT%20GATEWAY&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
 </div>
 
 <div align="center">
