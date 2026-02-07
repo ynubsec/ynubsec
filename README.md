@@ -14,7 +14,7 @@
 
 ---
 
-### [ TECHNICAL ARSENAL ]
+### ⚡ TECHNICAL ARSENAL
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=linux,bash,python,c,js,html,css,react,nodejs,postgres,git,github,vscode,debian,discord,postman,docker,ubuntu" />
@@ -30,7 +30,7 @@
 
 ---
 
-### [ ACTIVITY GRAPH ]
+### 📊 ACTIVITY GRAPH
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ynubsec&bg_color=0a0a0c&color=00FF9C&line=00FF9C&point=FFFFFF&area=true&hide_border=true" width="100%" />
@@ -38,7 +38,7 @@
 
 ---
 
-### [ CONTACT GATEWAY ]
+### 📬 CONTACT GATEWAY
 
 <div align="center">
   <a href="https://linkedin.com/in/ynubsec"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -55,6 +55,8 @@
 </div>
 
 ---
+
+### 🐍 CONTRIBUTION STREAM
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" />
