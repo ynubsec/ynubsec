@@ -13,11 +13,11 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=vision-friendly-dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=vision-friendly-dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=tokyonight&hide_border=true&title_color=00FF99&icon_color=00FF99&text_color=FFFFFF&bg_color=00000000" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=tokyonight&hide_border=true&title_color=00FF99&icon_color=00FF99&text_color=FFFFFF&bg_color=00000000" height="170" />
 </div>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=vision-friendly-dark&hide_border=true&ring=00FF9C&fire=00FF9C&sideNums=00FF9C&stroke=00FF9C" height="180" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=tokyonight&hide_border=true&ring=00FF99&fire=00FF99&sideNums=FFFFFF&stroke=00FF99&background=00000000" height="170" />
 </div>
 
 <br>
@@ -47,7 +47,8 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" />
+  <!-- Fallback to a static banner if the dynamic snake isn't generated yet -->
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" onerror="this.src='https://capsule-render.vercel.app/api?type=rect&height=100&text=CONTRIBUTION_DATA_SYNCING...&fontSize=20&theme=dark&fontColor=00FF9C'" />
 </div>
 
 <br>
