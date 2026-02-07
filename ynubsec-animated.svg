@@ -26,6 +26,19 @@
       <animate attributeName="cy" from="520" to="-20" dur="10s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0.6;0" dur="10s" repeatCount="indefinite"/>
     </circle>
+    
+    <style>
+      .link-group:hover {
+        filter: url(#atomGlow);
+        transition: 0.3s;
+      }
+      .link-group text {
+        transition: 0.3s;
+      }
+      .link-group:hover text {
+        fill: #00FF9C;
+      }
+    </style>
   </defs>
 
   <!-- Deep Matte Black Canvas -->
@@ -46,34 +59,35 @@
       <animate attributeName="opacity" values="0.05;0.3;0.05" dur="4s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="scale" values="1;1.03;1" dur="4s" repeatCount="indefinite" additive="sum"/>
     </text>
-    
-    <!-- Sharp Inner Highlight -->
-    <text text-anchor="middle" fill="white" font-family="'Segoe UI', Roboto, sans-serif" font-weight="950" font-size="160" letter-spacing="0.12em" fill-opacity="0.8">
-      <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
-    </text>
   </g>
 
-  <!-- Refined Social Gateway (Exactly as per User's "Good" Vision) -->
+  <!-- Refined Social Gateway (VISIBLE CLICKABLE LINKS) -->
   <g transform="translate(800, 420)">
-    <!-- GitHub Column -->
-    <g transform="translate(-300, 0)">
-      <circle cx="0" cy="0" r="10" fill="white" opacity="0.9"/> <!-- Pro Dot Icon -->
-      <text x="25" y="10" fill="white" font-family="sans-serif" font-size="22" font-weight="600" opacity="0.7">ynubsec</text>
-    </g>
+    <!-- GitHub Link -->
+    <a xlink:href="https://github.com/ynubsec" target="_blank" class="link-group">
+      <g transform="translate(-300, 0)">
+        <circle cx="0" cy="0" r="12" fill="white" opacity="1"/> <!-- High Visibility Dot -->
+        <text x="28" y="10" fill="white" font-family="sans-serif" font-size="24" font-weight="700" opacity="1">ynubsec</text>
+      </g>
+    </a>
     
-    <!-- Instagram Column -->
-    <g transform="translate(0, 0)">
-      <rect x="-12" y="-12" width="24" height="24" rx="7" stroke="white" stroke-width="2.2" fill="none" opacity="0.9"/>
-      <circle cx="0" cy="0" r="6" stroke="white" stroke-width="2.2" fill="none" opacity="0.9"/>
-      <circle cx="6" cy="-6" r="1.5" fill="white" opacity="0.9"/>
-      <text x="30" y="10" fill="white" font-family="sans-serif" font-size="22" font-weight="600" opacity="0.7">ynubsec</text>
-    </g>
+    <!-- Instagram Link -->
+    <a xlink:href="https://instagram.com/ynubsec" target="_blank" class="link-group">
+      <g transform="translate(0, 0)">
+        <rect x="-14" y="-14" width="28" height="28" rx="8" stroke="white" stroke-width="2.5" fill="none" opacity="1"/>
+        <circle cx="0" cy="0" r="7" stroke="white" stroke-width="2.5" fill="none" opacity="1"/>
+        <circle cx="7" cy="-7" r="2" fill="white" opacity="1"/>
+        <text x="35" y="10" fill="white" font-family="sans-serif" font-size="24" font-weight="700" opacity="1">ynubsec</text>
+      </g>
+    </a>
 
-    <!-- Network Column -->
-    <g transform="translate(300, 0)">
-      <circle cx="0" cy="0" r="11" stroke="white" stroke-width="2.2" fill="none" opacity="0.9"/> <!-- Hollow Circle Icon -->
-      <text x="25" y="10" fill="white" font-family="sans-serif" font-size="22" font-weight="600" opacity="0.7">ynubsec</text>
-    </g>
+    <!-- Network/Discord Link -->
+    <a xlink:href="https://discord.com" target="_blank" class="link-group">
+      <g transform="translate(300, 0)">
+        <circle cx="0" cy="0" r="13" stroke="white" stroke-width="2.5" fill="none" opacity="1"/> <!-- High Visibility Circle -->
+        <text x="30" y="10" fill="white" font-family="sans-serif" font-size="24" font-weight="700" opacity="1">ynubsec</text>
+      </g>
+    </a>
   </g>
 
   <!-- Rising Cinematic Dust Particles -->
@@ -85,17 +99,9 @@
 
   <!-- The Master Operative Silhouette (Right Edge Presence) -->
   <g id="MasterSilhouette" transform="translate(1150, 0)">
-    <!-- Smooth body shape with subtle gradient transition -->
-    <path d="M450 500 L 0 500 C 0 350, 40 220, 130 130 Q 200 80, 450 120 Z" fill="#0A0A0C">
-      <animate attributeName="fill" values="#0A0A0C;#050507;#0A0A0C" dur="10s" repeatCount="indefinite"/>
-    </path>
-    <!-- Intense Operative Eye-Slit -->
+    <path d="M450 500 L 0 500 C 0 350, 40 220, 130 130 Q 200 80, 450 120 Z" fill="#0A0A0C"/>
     <rect x="250" y="230" width="55" height="4" rx="2" fill="#FFC107" filter="url(#atomGlow)">
       <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
-      <animate attributeName="fill" values="#FFC107;#ffffff;#FFC107" dur="7s" repeatCount="indefinite"/>
     </rect>
   </g>
-
-  <!-- Final Glassy Transition Overlay (Right Edge) -->
-  <path d="M1200 0 L 1600 0 L 1600 500 L 1350 500 Z" fill="white" fill-opacity="0.02" pointer-events="none"/>
 </svg>
