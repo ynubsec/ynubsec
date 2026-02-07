@@ -1,122 +1,103 @@
 <svg width="1000" height="400" viewBox="0 0 1000 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Cinematic Masterpiece Background -->
-  <rect width="1000" height="400" fill="#0A0A0C"/>
-  <rect width="1000" height="400" fill="url(#smoke_grad)" fill-opacity="0.4"/>
+  <!-- Deep Matte Background -->
+  <rect width="1000" height="400" fill="#050505"/>
   
   <defs>
-    <radialGradient id="smoke_grad" cx="50%" cy="50%" r="50%" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2A2A2E" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#0A0A0C" stop-opacity="0"/>
+    <!-- Mist/Smoke Cloud Gradient -->
+    <radialGradient id="mist_grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
     </radialGradient>
     
-    <!-- Glow Filter for Logo -->
-    <filter id="logo_glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <!-- Turbulence for Organic Smoke -->
+    <filter id="mist_filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="5" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="20"/>
+    </filter>
+
+    <!-- Blend Glow for Logo -->
+    <filter id="logo_blend" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="glow"/>
       <feMerge>
-        <feMergeNode in="blur"/>
+        <feMergeNode in="glow"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
 
-  <!-- Left: Branding Focus -->
-  <g transform="translate(260, 110)">
-    <!-- Faithfully Recreating the "YNB" Brush Text -->
-    <g filter="url(#logo_glow)">
-      <!-- Y Stroke -->
-      <path d="M15 10 C 20 40, 30 80, 50 120" stroke="white" stroke-width="14" stroke-linecap="round"/>
-      <path d="M85 5 C 75 45, 55 95, 50 125" stroke="white" stroke-width="14" stroke-linecap="round"/>
-      <!-- N Stroke -->
-      <path d="M100 120 L 105 10 L 150 110 L 155 5" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-      <!-- B Stroke -->
-      <path d="M185 5 L 190 125 C 200 125, 235 120, 245 90 C 255 60, 215 40, 195 45 C 230 50, 250 15, 210 10" stroke="white" stroke-width="13" stroke-linecap="round"/>
+  <!-- Smoke layers behind logo for that "Blended" look -->
+  <g filter="url(#mist_filter)">
+    <ellipse cx="320" cy="180" rx="180" ry="90" fill="url(#mist_grad)"/>
+    <ellipse cx="280" cy="160" rx="120" ry="60" fill="url(#mist_grad)" opacity="0.5"/>
+  </g>
+
+  <!-- Main Branding: Recreating the YNB Brush Logo perfectly -->
+  <g id="Branding" transform="translate(250, 110)" filter="url(#logo_blend)">
+    <!-- Hand-drawn style brush strokes -->
+    <g opacity="0.95">
+      <!-- Brush Y -->
+      <path d="M15 15 C 22 45, 32 85, 48 118" stroke="white" stroke-width="14" stroke-linecap="round"/>
+      <path d="M85 10 C 75 45, 52 90, 48 122" stroke="white" stroke-width="14" stroke-linecap="round"/>
+      <!-- Brush N -->
+      <path d="M98 120 L 102 15 L 145 110 L 152 10" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Brush B -->
+      <path d="M185 15 L 190 120 C 205 120, 238 115, 245 90 C 255 60, 215 45, 195 50 C 235 55, 255 25, 215 15" stroke="white" stroke-width="13" stroke-linecap="round"/>
     </g>
     
-    <!-- Bold "YNUB" Subtext -->
-    <text x="130" y="170" text-anchor="middle" fill="white" font-family="'Segoe UI', Calibri, sans-serif" font-weight="900" font-size="38" letter-spacing="0.4em" opacity="0.9">YNUB</text>
-    
-    <!-- Social Handles (Corrected from 'zeek' to 'ynubsec') -->
-    <g transform="translate(0, 220)">
-      <!-- Left Hand -->
-      <g opacity="0.8">
-        <rect x="0" y="0" width="12" height="12" stroke="white" stroke-width="1.5" fill="none"/>
-        <text x="18" y="10" fill="white" font-family="sans-serif" font-size="11" font-weight="600">ynubsec</text>
-      </g>
-      
-      <!-- Middle Icon (Medium-style) -->
-      <path d="M110 0h6v12h-6zM118 0h6v12h-6zM126 0h6v12h-6z" fill="white" opacity="0.8"/>
-      
-      <!-- Right Hand -->
-      <g transform="translate(180, 0)" opacity="0.8">
-        <rect x="0" y="0" width="12" height="12" rx="3" stroke="white" stroke-width="1.5" fill="none"/>
-        <text x="18" y="10" fill="white" font-family="sans-serif" font-size="11" font-weight="600">ynubsec</text>
-      </g>
+    <!-- Bold YNUB Typeface perfectly blended -->
+    <text x="135" y="175" text-anchor="middle" fill="white" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="38" letter-spacing="0.45em" opacity="0.9">YNUB</text>
+  </g>
+
+  <!-- Social Handles exactly as per Reference but with YNUBSEC -->
+  <g transform="translate(220, 310)" opacity="0.8">
+    <g transform="translate(0, 0)">
+       <rect x="0" y="0" width="12" height="12" stroke="white" stroke-width="1.2" fill="none"/>
+       <text x="18" y="10" fill="white" font-family="sans-serif" font-size="11" font-weight="600">ynubsec</text>
     </g>
+    
+    <!-- Medium-style Bowtie icon -->
+    <path d="M100 0 L 115 12 L 100 12 L 115 0 Z" fill="white"/>
 
-    <!-- Social Icons Row (Corrected Icons) -->
-    <g transform="translate(20, 270)" opacity="0.9">
-      <!-- Icon 1: GitHub -->
-      <circle cx="0" cy="0" r="18" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.15"/>
-      <path d="M0 -10c-5.5 0-10 4.5-10 10 0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1 1.9-.3 2-.3 2.9-.3s2 0 2.9.3c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.5 0-5.5-4.5-10-10-10z" fill="white" transform="scale(0.8)"/>
-
-      <!-- Icon 2: LinkedIn -->
-      <g transform="translate(60, 0)">
-        <circle cx="0" cy="0" r="18" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.15"/>
-        <path d="M-6-6h3v12h-3zM-4.5-8.5c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zm12.5 8.5h-3v-5c0-1.2-.5-2-1.5-2-.8 0-1.3.5-1.5 1s-.2 1.2-.2 1.8v4.2h-3s.1-10 0-11h3v1.6c.4-.6 1.1-1.5 2.8-1.5 2 0 3.5 1.3 3.5 4.1v6.8h-.1z" fill="white" transform="scale(0.8)"/>
-      </g>
-
-      <!-- Icon 3: Instagram -->
-      <g transform="translate(120, 0)">
-        <circle cx="0" cy="0" r="18" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.15"/>
-        <rect x="-8" y="-8" width="16" height="16" rx="4" stroke="white" stroke-width="2" fill="none"/>
-        <circle cx="0" cy="0" r="4" stroke="white" stroke-width="2" fill="none"/>
-      </g>
-
-      <!-- Icon 4: Discord -->
-      <g transform="translate(180, 0)">
-        <circle cx="0" cy="0" r="18" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.15"/>
-        <path d="M7.7-6.5c-1.1-.8-2.3-1.3-3.7-1.5 0 0-.1 0-.2.2-.5.5-.9 1.5-1.2 2.5-1.4-.2-2.8-.2-4.2 0-.3-1-.7-2-1.2-2.5-.1-.2-.2-.2-.2-.2-1.4.2-2.6.7-3.7 1.5-.2.1-.2.3-.2.5 1.6 4.7 4 9.1 7.2 14.8 0 .1.1.1.2.1 1.4.9 2.7 1.6 4.1 2 .2.1.4 0 .5-.2.3-.4.6-.9.9-1.3 0-.1 0-.2-.1-.2-.6-.4-1.2-.9-1.7-1.4-.1-.1-.1-.2 0-.3.1-.1.2-.2.3-.3 3.1.5 6.3.5 9.4 0 .1.1.2.2.3.3.1.1 0 .2-.1.3-.5.5-1.1 1-1.7 1.4-.1.1-.1.1-.1.2.3.4.6.9.9 1.3.1.2.3.3.5.2 1.4-.4 2.7-1.1 4.1-2 .1-.1.2-.1.2-.1 3.2-5.7 5.6-10.1 7.2-14.8 0-.2 0-.4-.2-.5zm-8.8 8.1c-.8 0-1.4-.7-1.4-1.5s.6-1.5 1.4-1.5 1.4.7 1.4 1.5-.6 1.5-1.4 1.5zm6 0c-.8 0-1.4-.7-1.4-1.5s.6-1.5 1.4-1.5 1.4.7 1.4 1.5-.6 1.5-1.4 1.5z" fill="white" transform="scale(0.8)"/>
-      </g>
+    <g transform="translate(180, 0)">
+       <rect x="0" y="0" width="12" height="12" rx="3" stroke="white" stroke-width="1.2" fill="none"/>
+       <text x="18" y="10" fill="white" font-family="sans-serif" font-size="11" font-weight="600">ynub1337</text>
     </g>
   </g>
 
-  <!-- Right: Cinematic Anime Character Profile -->
+  <!-- Lower Icon Row (Circle, Bowtie, Insta, Discord) -->
+  <g transform="translate(200, 360)" opacity="0.9">
+     <circle cx="0" cy="0" r="14" stroke="white" stroke-width="1.5" fill="none"/>
+     <path d="M0 -6 L 0 6 M -6 0 L 6 0" stroke="white" stroke-width="1.5" stroke-linecap="round" transform="rotate(45)"/>
+     
+     <g transform="translate(90, -6)">
+        <path d="M0 0 L 12 12 L 0 12 L 12 0 Z" fill="white"/>
+     </g>
+     
+     <g transform="translate(175, -8)">
+        <rect x="0" y="0" width="16" height="16" rx="4" stroke="white" stroke-width="1.5" fill="none"/>
+        <circle cx="8" cy="8" r="4" stroke="white" stroke-width="1.5" fill="none"/>
+     </g>
+     
+     <g transform="translate(260, -8)">
+        <path d="M15 1 C 12 -1, 10 -1, 10 -1 S 9 -1, 8 1 C 5 5, 2 8, 0 16 C 4 18, 8 20, 15 20 C 18 16, 22 10, 25 1" fill="white" transform="scale(0.6)"/>
+     </g>
+  </g>
+
+  <!-- Right Side: The Master Character Silhouette -->
   <g id="CharacterZone" transform="translate(680, 0)">
-    <!-- Main Form -->
-    <path d="M50 400 L 0 400 C 0 300, 20 200, 80 120 Q 120 70, 220 50 Q 350 30, 320 200 L 320 400 Z" fill="#0D0D10"/>
-    
-    <!-- Shading & Highlights -->
-    <path d="M140 100 C 130 80, 150 40, 200 30 C 250 20, 310 80, 310 150" stroke="white" stroke-opacity="0.1" stroke-width="2" fill="none"/>
-    
-    <!-- Intense Golden Eye -->
-    <g transform="translate(235, 168)">
-       <path d="M-12 -3 Q 5 -10, 22 -3" stroke="#FFD700" stroke-width="4" stroke-opacity="0.9">
+    <path d="M50 400 L 0 400 C 0 300, 20 200, 80 120 Q 120 70, 220 50 Q 350 30, 320 200 L 320 400 Z" fill="#0A0A0C"/>
+    <!-- Intense Golden Eye and Sparks -->
+    <g transform="translate(235, 172)">
+       <path d="M-12 -3 Q 5 -10, 22 -3" stroke="#FFD700" stroke-width="4">
          <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
        </path>
-       <circle cx="5" cy="0" r="1.5" fill="white" fill-opacity="0.7"/>
     </g>
-
-    <!-- Moving Golden Particle Embers -->
-    <g id="Embers">
-      <circle cx="280" cy="180" r="3" fill="#FFD700" fill-opacity="0.8">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="cy" values="180;140;180" dur="4s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="300" cy="120" r="5" fill="#FFD700" fill-opacity="0.4">
-        <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="260" cy="240" r="2" fill="#FFFFFF" fill-opacity="0.6">
-        <animate attributeName="cy" values="240;200;240" dur="2s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-  </g>
-
-  <!-- Floating Depth Particles -->
-  <g id="ForegroundParticles">
-    <circle cx="100" cy="350" r="1.5" fill="#FFD700" opacity="0.3"/>
-    <circle cx="500" cy="50" r="1" fill="#FFFFFF" opacity="0.2"/>
-    <circle cx="950" cy="280" r="2" fill="#FFD700" opacity="0.4">
-       <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/>
+    <!-- Particle Embers Drifting -->
+    <circle cx="280" cy="120" r="4" fill="#FFD700" fill-opacity="0.8">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="120;80;120" dur="3s" repeatCount="indefinite"/>
     </circle>
+    <circle cx="310" cy="250" r="2" fill="white" opacity="0.4"/>
   </g>
 </svg>
