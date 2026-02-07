@@ -1,46 +1,93 @@
-<svg width="1000" height="350" viewBox="0 0 1000 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Glass Window Base -->
-  <rect x="2" y="2" width="996" height="346" rx="20" fill="#0A0A0C" fill-opacity="0.6"/>
-  <rect x="2" y="2" width="996" height="346" rx="20" fill="url(#glass_overlay)" fill-opacity="0.2"/>
-  <rect x="2.5" y="2.5" width="995" height="345" rx="19.5" stroke="url(#border_grad)" stroke-opacity="0.3"/>
-  
-  <!-- System Label -->
-  <rect x="40" y="30" width="120" height="24" rx="12" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
-  <text fill="#00FF9C" font-family="monospace" font-size="10" font-weight="700" letter-spacing="0.1em"><tspan x="55" y="46">SYSTEM_INTEGRITY</tspan></text>
+<svg width="1000" height="400" viewBox="0 0 1000 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glass Filter for Frosting -->
+    <filter id="glass_frost" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="frost"/>
+      <feComposite in="SourceGraphic" in2="frost" operator="over"/>
+    </filter>
 
-  <!-- Typography -->
-  <text fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="-0.02em"><tspan x="40" y="90">Bishnu Neupane</tspan></text>
-  <text fill="#8B949E" font-family="sans-serif" font-size="16" font-weight="500"><tspan x="40" y="115">Security Researcher | Red Team Enthusiast | Full-Stack Developer</tspan></text>
-  
-  <!-- Content Paragraph -->
-  <text fill="#E0E0E0" font-family="sans-serif" font-size="14" line-height="24">
-    <tspan x="40" y="160">Building on the principle: "Learning by breaking, securing by understanding."</tspan>
-    <tspan x="40" y="186">I am an 18-year-old student researcher from Nepal with a profound focus on Linux kernels, web internals,</tspan>
-    <tspan x="40" y="206">and offensive security. My methodology involves dissecting complex systems from first principles to</tspan>
-    <tspan x="40" y="226">identify vulnerabilities and implement robust defense logic.</tspan>
-  </text>
+    <!-- Glowing Border Gradient -->
+    <linearGradient id="border_glow" x1="0" y1="0" x2="1000" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FF9C" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#00FF9C" stop-opacity="0.4"/>
+    </linearGradient>
 
-  <!-- Operations List -->
-  <g opacity="0.9">
-    <circle cx="45" cy="265" r="3" fill="#00FF9C"/>
-    <text fill="#B0B0B0" font-family="monospace" font-size="13"><tspan x="60" y="269">CURRENT_OPERATIONS : Advanced Security Tooling &amp; Exploitation Research</tspan></text>
-    
-    <circle cx="45" cy="290" r="3" fill="#00FF9C"/>
-    <text fill="#B0B0B0" font-family="monospace" font-size="13"><tspan x="60" y="294">MISSION_OBJECTIVE  : Deep-Diving Cloud Security &amp; Stealth Architectures</tspan></text>
-    
-    <circle cx="45" cy="315" r="3" fill="#00FF9C"/>
-    <text fill="#B0B0B0" font-family="monospace" font-size="13"><tspan x="60" y="319">DATA_EXCHANGE     : Open for queries on Linux, Python, or Network Logic</tspan></text>
+    <!-- Translucent Background Duo -->
+    <linearGradient id="bg_grad" x1="0" y1="0" x2="1000" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#010409" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Subtle Content Highlights -->
+    <radialGradient id="spotlight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(500 200) scale(600 300)">
+      <stop stop-color="#00FF9C" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow / Outer Depth -->
+  <rect x="10" y="10" width="980" height="380" rx="24" fill="black" fill-opacity="0.4"/>
+
+  <!-- Main Card Body -->
+  <rect x="2" y="2" width="996" height="396" rx="24" fill="url(#bg_grad)"/>
+  <rect x="2" y="2" width="996" height="396" rx="24" fill="url(#spotlight)"/>
+  
+  <!-- Glassy Border Overlay -->
+  <rect x="3" y="3" width="994" height="394" rx="23" stroke="url(#border_glow)" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Header Area -->
+  <g transform="translate(45, 45)">
+    <!-- Status Badge -->
+    <rect width="140" height="26" rx="13" fill="#00FF9C" fill-opacity="0.1" stroke="#00FF9C" stroke-opacity="0.2"/>
+    <circle cx="15" cy="13" r="4" fill="#00FF9C">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="28" y="17" fill="#00FF9C" font-family="monospace" font-size="11" font-weight="700" letter-spacing="0.1em">SYSTEM_LIVE</text>
+
+    <!-- Name & Title -->
+    <text y="70" fill="white" font-family="'Inter', sans-serif" font-size="36" font-weight="900" letter-spacing="-0.03em">Bishnu Neupane</text>
+    <text y="100" fill="#8B949E" font-family="'Inter', sans-serif" font-size="18" font-weight="500">Security Researcher | Red Team Enthusiast | Full-Stack Developer</text>
   </g>
 
-  <defs>
-    <linearGradient id="glass_overlay" x1="0" y1="0" x2="1000" y2="350" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00FF9C" stop-opacity="0.1"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="border_grad" x1="0" y1="0" x2="1000" y2="350" gradientUnits="userSpaceOnUse">
-      <stop stop-color="white" stop-opacity="0.4"/>
-      <stop offset="0.5" stop-color="#00FF9C" stop-opacity="0.1"/>
-      <stop offset="1" stop-color="white" stop-opacity="0.4"/>
-    </linearGradient>
-  </defs>
+  <!-- Bio Content Section -->
+  <g transform="translate(45, 170)">
+    <!-- Decorative Terminal Prompt -->
+    <text fill="#00FF9C" font-family="monospace" font-size="16" font-weight="700">λ</text>
+    
+    <!-- Deep Bio Text -->
+    <text x="25" fill="#E6EDF3" font-family="'Inter', -apple-system, sans-serif" font-size="15" line-height="1.6">
+      <tspan x="25" y="0" font-weight="600" fill="#00FF9C">"Learning by breaking, securing by understanding."</tspan>
+      <tspan x="25" y="30">I am an 18-year-old student researcher from Nepal with a profound mission: securing the digital ecosystem</tspan>
+      <tspan x="25" y="52">through the lens of offensive security. I believe in dissecting systems from first principles to truly</tspan>
+      <tspan x="25" y="74">understand the root of trust, and engineering robust defense logic that stands the test of time.</tspan>
+    </text>
+  </g>
+
+  <!-- Technical Operations Grid -->
+  <g transform="translate(45, 290)">
+    <!-- Row 1 -->
+    <g>
+      <rect width="900" height="30" rx="8" fill="white" fill-opacity="0.02"/>
+      <text x="15" y="20" fill="#00FF9C" font-family="monospace" font-size="11" font-weight="700">[ OP_CENTER ]</text>
+      <text x="130" y="20" fill="#B0B0B0" font-family="monospace" font-size="13">Advanced Security Tooling &amp; Exploitation Research</text>
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(0, 35)">
+      <rect width="900" height="30" rx="8" fill="white" fill-opacity="0.02"/>
+      <text x="15" y="20" fill="#00FF9C" font-family="monospace" font-size="11" font-weight="700">[ MISSION ]</text>
+      <text x="130" y="20" fill="#B0B0B0" font-family="monospace" font-size="13">Deep-Diving Cloud Security &amp; Stealth Architectures</text>
+    </g>
+    <!-- Row 3 -->
+    <g transform="translate(0, 70)">
+      <rect width="900" height="30" rx="8" fill="white" fill-opacity="0.02"/>
+      <text x="15" y="20" fill="#00FF9C" font-family="monospace" font-size="11" font-weight="700">[ NETWORK ]</text>
+      <text x="130" y="20" fill="#B0B0B0" font-family="monospace" font-size="13">Open for queries on Linux Kernels, Python, or Secure Logic</text>
+    </g>
+  </g>
+
+  <!-- Decorative Corner Elements -->
+  <path d="M960 30 L 970 30 L 970 40" stroke="#00FF9C" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="970" cy="30" r="1.5" fill="#00FF9C"/>
 </svg>
