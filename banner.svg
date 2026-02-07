@@ -1,83 +1,93 @@
 <svg width="1000" height="400" viewBox="0 0 1000 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Cinematic Dark Background -->
-  <rect width="1000" height="400" fill="#050505"/>
+  <!-- Cinema Black Background -->
+  <rect width="1000" height="400" fill="#020203"/>
   
-  <!-- Subtle Smoke/Mist Effect -->
-  <radialGradient id="smoke_grad" cx="50%" cy="50%" r="50%">
-    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
-    <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
-  </radialGradient>
-  <ellipse cx="300" cy="200" rx="400" ry="200" fill="url(#smoke_grad)"/>
+  <!-- Smoky Depth Effects -->
+  <defs>
+    <radialGradient id="smoke1" cx="300" cy="200" r="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#222" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#020203" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="smoke2" cx="700" cy="200" r="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#333" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#020203" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1000" height="400" fill="url(#smoke1)"/>
+  <rect width="1000" height="400" fill="url(#smoke2)"/>
 
-  <!-- Left/Center Branding: YNB Brush Logo -->
-  <g id="Branding" transform="translate(300, 100)">
-    <!-- Faithfully Recreated Brush YNB (Simplified Paths for SVG) -->
-    <g transform="scale(1.2)">
-      <!-- Brush Y -->
-      <path d="M20 10 C 25 25, 35 60, 45 90 M70 15 C 60 40, 45 70, 40 100" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
-      <!-- Brush N -->
-      <path d="M80 90 L 85 20 L 120 85 L 125 15" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
-      <!-- Brush B -->
-      <path d="M140 15 L 145 95 C 150 95, 180 90, 185 65 C 190 40, 160 35, 150 40 C 180 45, 195 10, 160 5" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
-      
-      <!-- Subtext Y N U B -->
-      <text x="105" y="130" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="28" letter-spacing="0.4em">YNUB</text>
+  <!-- Left: Professional YNB Brush Logo Integration -->
+  <g transform="translate(280, 100)">
+    <!-- Hand-drawn style brush strokes for Y-N-B -->
+    <g filter="url(#glow)">
+      <!-- Y Stroke -->
+      <path d="M10 20 C 15 40, 25 80, 45 120" stroke="white" stroke-width="12" stroke-linecap="round"/>
+      <path d="M80 15 C 70 50, 50 90, 45 125" stroke="white" stroke-width="12" stroke-linecap="round"/>
+      <!-- N Stroke -->
+      <path d="M95 120 L 100 20 L 140 110 L 145 15" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- B Stroke -->
+      <path d="M170 15 L 175 125 C 200 120, 230 110, 240 85 C 250 60, 210 40, 190 45 C 220 50, 240 15, 200 10" stroke="white" stroke-width="11" stroke-linecap="round"/>
     </g>
     
-    <!-- Row of Socials exactly like Reference -->
-    <g transform="translate(-20, 200)">
+    <!-- Exact "YNUB" Typeface recreation -->
+    <text x="125" y="170" text-anchor="middle" fill="white" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="34" letter-spacing="0.5em" opacity="0.95">YNUB</text>
+    
+    <!-- Social Icons perfectly aligned like 'Zeek' Ref -->
+    <g transform="translate(-20, 240)">
       <!-- GitHub -->
-      <path d="M30 0c-16.5 0-30 13.5-30 30 0 13.2 8.5 24.4 20.4 28.4 1.5.3 2-.6 2-1.4v-5.4c-8.3 1.8-10.1-4-10.1-4-1.4-3.5-3.3-4.4-3.3-4.4-2.7-1.8.2-1.8.2-1.8 3 .2 4.6 3.1 4.6 3.1 2.7 4.6 7 3.3 8.7 2.5.3-1.9 1-3.3 1.9-4-6.6-.7-13.6-3.3-13.6-14.8 0-3.3 1.2-5.9 3.1-8-.3-.8-1.3-3.8.3-7.9 0 0 2.5-.8 8.2 3.1 2.4-.7 5-1 7.5-1s5.1.3 7.5 1c5.7-3.9 8.2-3.1 8.2-3.1 1.6 4.1.6 7.1.3 7.9 1.9 2.1 3.1 4.7 3.1 8 0 11.5-7 14.1-13.6 14.8 1.1.9 2.1 2.7 2.1 5.4v8.1c0 .8.5 1.7 2.1 1.4 11.9-4 20.4-15.2 20.4-28.4 0-16.5-13.5-30-30-30z" fill="#FFFFFF" opacity="0.8" transform="scale(0.5)"/>
+      <circle cx="40" cy="0" r="28" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+      <path d="M40 -12c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.1 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.7.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.7-1.6 8.1-6.1 8.1-11.4 0-6.6-5.4-12-12-12z" fill="white" opacity="0.9"/>
       
-      <!-- Medium (Stylized like logo in ref) -->
-      <g transform="translate(100, 0) scale(0.6)">
-        <path d="M0 0h12v40h-12zM15 0h12v40h-12zM30 0h12v40h-12z" fill="#FFFFFF" opacity="0.8"/>
-      </g>
+      <!-- Medium -->
+      <circle cx="120" cy="0" r="28" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+      <path d="M108 -10h6v20h-6zM117 -10h6v20h-6zM126 -10h6v20h-6z" fill="white" opacity="0.9"/>
       
       <!-- Instagram -->
-      <g transform="translate(200, 0) scale(0.6)">
-        <rect x="0" y="0" width="40" height="40" rx="10" stroke="#FFFFFF" stroke-width="4" fill="none" opacity="0.8"/>
-        <circle cx="20" cy="20" r="8" stroke="#FFFFFF" stroke-width="4" fill="none" opacity="0.8"/>
-        <circle cx="32" cy="8" r="2" fill="#FFFFFF" opacity="0.8"/>
-      </g>
+      <circle cx="200" cy="0" r="28" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+      <rect x="188" y="-12" width="24" height="24" rx="6" stroke="white" stroke-width="2.5" fill="none" opacity="0.9"/>
+      <circle cx="200" cy="0" r="6" stroke="white" stroke-width="2.5" fill="none" opacity="0.9"/>
       
       <!-- Discord -->
-      <g transform="translate(300, 0) scale(0.6)">
-        <path d="M34.8 6.5C31.4 4.1 27.6 2.5 23.5 1.9C23.5 1.8 23.3 2 23.2 2.3C21.7 4.5 20.3 7.6 19.3 10.7C15.1 10.1 10.9 10.1 6.7 10.7C5.7 7.6 4.3 4.5 2.8 2.3C2.7 2 2.5 1.8 2.5 1.9C-1.6 2.5 -5.4 4.1 -8.8 6.5C-9.3 6.9 -9.3 7.5 -9.2 8C-2.4 18 4.2 27.6 13 40C13 40.1 13.2 40.2 13.3 40.2C16.1 42.1 18.8 44.1 21.6 45C22.2 45.2 22.8 45 23.1 44.5C23.8 43.6 24.5 42.6 25 41.5C25.1 41.3 25 41 24.8 40.9C22.6 40.1 20.6 39 18.7 37.7C18.4 37.5 18.4 37.1 18.7 36.9C19.1 36.6 19.5 36.3 19.9 36C21.3 35.1 23.9 34.3 26.5 34.3C29.1 34.3 31.7 35.1 33.1 36C33.5 36.3 33.9 36.6 34.3 36.9C34.6 37.1 34.6 37.5 34.3 37.7C32.4 39 30.4 40.1 28.2 40.9C28 41 27.9 41.3 28 41.5C28.5 42.6 29.2 43.6 29.9 44.5C30.2 45 30.8 45.2 31.4 45C34.2 44.1 36.9 42.1 39.7 40.2C39.8 40.2 40 40.1 40 40C48.8 27.6 55.4 18 62.2 8.1C62.3 7.6 62.3 7 61.8 6.5C57.6 3.1 52.8 1.4 47.7 0.9C47.1 0.7 46.5 1.1 46.2 1.9C45.2 4.1 44.2 6.5 43.5 9.1C37.5 7.9 31.5 7.9 25.5 9.1C24.8 6.5 23.8 4.1 22.8 1.9C22.5 1.1 21.9 0.7 21.3 0.9" fill="#FFFFFF" opacity="0.8"/>
-      </g>
+      <circle cx="280" cy="0" r="28" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+      <path d="M292 -8c-2.4-1.8-5.1-3-8-3.4 0 0-.1.1-.2.4-1 .1-2 .1-3.1 0-.1-.3-.2-.4-.2-.4-2.9.4-5.6 1.6-8 3.4-.4.4-1.9 2-3.4 9.1 2.2 2.8 5.7 4.1 8.4 4.5.4 0 .7-.2.8-.5.2-.4.5-.9.7-1.3 0-.1.1-.2-.1-.3-.9-.6-1.8-1.3-2.6-2.1-.1-.1-.1-.2 0-.3.2-.1.3-.3.5-.4 4.7.7 9.5.7 14.1 0 .2.1.3.3.5.4.1.1 0 .2-.1.3-.8.8-1.7 1.5-2.6 2.1-.2.1-.1.2-.1.3.2.4.5.9.7 1.3.1.3.4.5.8.5 2.7-.4 6.2-1.7 8.4-4.5-1.5-7.1-3-8.7-3.4-9.1zm-8.8 8.1c-.8 0-1.4-.7-1.4-1.5s.6-1.5 1.4-1.5 1.4.7 1.4 1.5-.6 1.5-1.4 1.5zm6 0c-.8 0-1.4-.7-1.4-1.5s.6-1.5 1.4-1.5 1.4.7 1.4 1.5-.6 1.5-1.4 1.5z" fill="white" opacity="0.9"/>
     </g>
   </g>
 
-  <!-- Right Side: High-Detailed Anime Character Silhouette -->
-  <g id="Character" transform="translate(680, 0)">
-    <!-- Main Body Shape -->
-    <path d="M50 400 L 0 400 C 0 300, 20 200, 80 120 C 100 90, 150 70, 220 50 C 280 30, 320 100, 320 200 L 320 400 Z" fill="#0A0A0E"/>
-    <!-- Head Outline -->
-    <path d="M140 100 C 130 80, 150 40, 200 30 C 250 20, 300 60, 310 120 C 315 150, 300 220, 280 250" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2" fill="none"/>
-    <!-- Glowing Eye Feature -->
-    <path d="M220 160 Q 235 155, 250 160" stroke="#FFD700" stroke-width="4" stroke-opacity="0.8">
-      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
-    </path>
-    <!-- Particle Embers -->
-    <g id="Embers">
-      <circle cx="280" cy="80" r="3" fill="#FFD700" fill-opacity="0.6">
-        <animate attributeName="cy" values="80;40;80" dur="4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="260" cy="140" r="2" fill="#FFFFFF" fill-opacity="0.4">
-        <animate attributeName="cy" values="140;100;140" dur="3s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="290" cy="180" r="4" fill="#FFD700" fill-opacity="0.8">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="5s" repeatCount="indefinite"/>
-      </circle>
+  <!-- Right Side: Side-Profile Anime Character (Superior Detail) -->
+  <g id="AnimeCharacter" transform="translate(620, -20) scale(1.1)">
+    <!-- Base Shadow Silhouette -->
+    <path d="M40 400 Q -20 300, 20 200 Q 40 120, 100 80 Q 150 40, 220 30 Q 300 30, 320 150 L 320 400 Z" fill="#08080C"/>
+    <!-- Intense Side Profile Outlines -->
+    <path d="M120 120 C 110 100, 120 60, 180 40 C 240 20, 300 60, 310 150 C 315 200, 290 280, 260 320" stroke="white" stroke-opacity="0.15" stroke-width="2" fill="none"/>
+    <!-- Character Eye (Glowing Intensity) -->
+    <g transform="translate(230, 160)">
+      <path d="M-10 -2 Q 5 -8, 20 -2" stroke="#FFC107" stroke-width="5" stroke-opacity="0.8">
+        <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="5" cy="0" r="1.5" fill="white"/>
     </g>
+    <!-- Character Hair Spikes -->
+    <path d="M130 90 L 110 110 M 160 50 L 140 80 M 250 40 L 230 70" stroke="white" stroke-opacity="0.1" stroke-width="3"/>
   </g>
-  
-  <!-- Lower Embers from Ref -->
-  <g id="LowerEmbers">
-    <circle cx="850" cy="350" r="6" fill="#FFD700" fill-opacity="0.3"/>
-    <circle cx="800" cy="300" r="3" fill="#FFD700" fill-opacity="0.5">
-       <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+
+  <!-- Cinematic Spark System -->
+  <g id="CinematicSparks">
+    <circle cx="850" cy="120" r="2.5" fill="#FFC107" opacity="0.6">
+      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="120;90;120" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="920" cy="250" r="1.5" fill="white" opacity="0.4">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="320" r="4" fill="#FFC107" opacity="0.2">
+      <animate attributeName="opacity" values="0.05;0.4;0.05" dur="4s" repeatCount="indefinite"/>
     </circle>
   </g>
 </svg>
