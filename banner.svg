@@ -1,60 +1,78 @@
-<svg width="1000" height="300" viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Dynamic Glassmorphism Background -->
-  <rect width="1000" height="300" rx="20" fill="#0A0A0C"/>
-  <rect width="1000" height="300" rx="20" fill="url(#glass_gradient)" fill-opacity="0.15"/>
-  <rect x="0.5" y="0.5" width="999" height="299" rx="19.5" stroke="url(#border_gradient)" stroke-opacity="0.2"/>
+<svg width="1000" height="400" viewBox="0 0 1000 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dynamic Dark Background -->
+  <rect width="1000" height="400" rx="15" fill="#0A0A0C"/>
+  <rect width="1000" height="400" rx="15" fill="url(#bg_gradient)" fill-opacity="0.2"/>
   
-  <!-- Floating Orbs for Glass Effect -->
-  <circle cx="150" cy="80" r="100" fill="#00FF9C" fill-opacity="0.1">
-    <animate attributeName="cx" values="150;180;150" dur="10s" repeatCount="indefinite" />
-  </circle>
-  <circle cx="850" cy="220" r="80" fill="#00FF9C" fill-opacity="0.05">
-    <animate attributeName="cy" values="220;190;220" dur="8s" repeatCount="indefinite" />
+  <!-- "Smoke" and Depth effects -->
+  <circle cx="200" cy="200" r="150" fill="#00FF9C" fill-opacity="0.05">
+    <animate attributeName="opacity" values="0.05;0.1;0.05" dur="10s" repeatCount="indefinite" />
   </circle>
 
-  <!-- Left: Tech Matrix Grid -->
-  <g opacity="0.6">
-    <rect x="60" y="80" width="22" height="22" rx="4" fill="#00FF9C"/>
-    <rect x="90" y="80" width="22" height="22" rx="4" fill="#00FF9C" fill-opacity="0.4"/>
-    <rect x="120" y="80" width="22" height="22" rx="4" fill="#00FF9C" fill-opacity="0.1"/>
+  <!-- Left/Center Branding -->
+  <g id="Branding">
+    <!-- Styled "Y" Brush Path (Abstracted) -->
+    <path d="M420 120 L440 180 L460 120 M440 180 L440 220" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
     
-    <rect x="60" y="110" width="22" height="22" rx="4" fill="#00FF9C" fill-opacity="0.4"/>
-    <rect x="90" y="110" width="22" height="22" rx="4" fill="#00FF9C" fill-opacity="0.8"/>
-    <rect x="120" y="110" width="22" height="22" rx="4" fill="#00FF9C" fill-opacity="0.3"/>
+    <!-- Main Text -->
+    <text fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="72" font-weight="900" letter-spacing="-0.02em">
+      <tspan x="350" y="165" fill="#ffffff" style="font-style: italic;">YNUB</tspan>
+      <tspan x="560" y="165" fill="#00FF9C" style="font-style: italic;">SEC</tspan>
+    </text>
     
-    <rect x="60" y="140" width="22" height="22" rx="4" fill="#00FF9C" fill-opacity="0.1"/>
-    <rect x="90" y="140" width="22" height="22" rx="4" fill="#00FF9C" fill-opacity="0.4"/>
-    <rect x="120" y="140" width="22" height="22" rx="4" fill="#00FF9C" fill-opacity="0.9"/>
+    <!-- Subtext -->
+    <text fill="#ffffff" fill-opacity="0.6" font-family="monospace" font-size="22" letter-spacing="0.3em"><tspan x="380" y="200">Bishnu Neupane</tspan></text>
   </g>
 
-  <!-- Brand Typography -->
-  <text fill="#ffffff" xml:space="preserve" style="white-space: pre" font-family="'Outfit', sans-serif" font-size="24" font-weight="300" letter-spacing="0.2em"><tspan x="360" y="105">BISHNU NEUPANE</tspan></text>
-  <text fill="#00FF9C" xml:space="preserve" style="white-space: pre" font-family="'Outfit', sans-serif" font-size="76" font-weight="900" letter-spacing="-0.03em"><tspan x="360" y="175">YNUBSEC</tspan></text>
-  
-  <!-- "Glass" Pill -->
-  <rect x="360" y="195" width="280" height="36" rx="18" fill="white" fill-opacity="0.05"/>
-  <rect x="360.5" y="195.5" width="279" height="35" rx="17.5" stroke="white" stroke-opacity="0.2"/>
-  <text fill="#00FF9C" xml:space="preserve" style="white-space: pre" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" letter-spacing="0.15em"><tspan x="388" y="218">SECURITY ARCHITECT</tspan></text>
+  <!-- Right Side: Stylized Hacker Character Silhouette -->
+  <g id="Character">
+    <path d="M750 400 C 750 300, 800 150, 880 100 C 920 80, 980 120, 1000 150 L 1000 400 Z" fill="#121216"/>
+    <path d="M880 100 C 860 110, 840 140, 830 180 C 820 220, 850 280, 880 320" stroke="white" stroke-opacity="0.1" stroke-width="2"/>
+    <!-- Glowing Eye -->
+    <circle cx="890" cy="180" r="4" fill="#00FF9C">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="890" cy="180" r="12" fill="#00FF9C" fill-opacity="0.2"/>
+  </g>
 
-  <!-- Capability Indicators -->
-  <rect x="740" y="85" width="180" height="32" rx="16" fill="white" fill-opacity="0.03" stroke="white" stroke-opacity="0.1"/>
-  <text fill="#E0E0E0" font-family="sans-serif" font-size="12" font-weight="500"><tspan x="775" y="105">Red Teaming</tspan></text>
-  
-  <rect x="740" y="130" width="180" height="32" rx="16" fill="white" fill-opacity="0.03" stroke="white" stroke-opacity="0.1"/>
-  <text fill="#E0E0E0" font-family="sans-serif" font-size="12" font-weight="500"><tspan x="768" y="150">Vulnerability Research</tspan></text>
-  
-  <rect x="740" y="175" width="180" height="32" rx="16" fill="white" fill-opacity="0.03" stroke="white" stroke-opacity="0.1"/>
-  <text fill="#E0E0E0" font-family="sans-serif" font-size="12" font-weight="500"><tspan x="782" y="195">Secure Code</tspan></text>
+  <!-- Social Icons (Embedded SVG Paths) -->
+  <g id="Socials" transform="translate(320, 260)">
+    <!-- GitHub -->
+    <circle cx="30" cy="30" r="25" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+    <path d="M30 15c-8.3 0-15 6.7-15 15 0 6.6 4.3 12.2 10.3 14.2.8.1 1-.3 1-.7v-2.6c-4.2.9-5.1-2-5.1-2-.7-1.7-1.7-2.1-1.7-2.1-1.4-.9.1-.9.1-.9 1.5.1 2.3 1.5 2.3 1.5 1.3 2.3 3.5 1.6 4.4 1.2.1-1 .5-1.6 1-2-3.3-.4-6.8-1.7-6.8-7.4 0-1.6.6-3 1.5-4-.1-.4-.6-1.9.1-4 0 0 1.3-.4 4.1 1.5 1.2-.3 2.5-.5 3.8-.5s2.6.2 3.8.5c2.9-1.9 4.1-1.5 4.1-1.5.8 2.1.2 3.6.1 4 1 1 1.5 2.4 1.5 4 0 5.8-3.5 7-6.8 7.4.5.5 1 1.4 1 2.8v4.1c0 .4.3.9 1.1.7 6-2 10.3-7.6 10.3-14.2 0-8.3-6.7-15-15-15z" fill="white" transform="translate(0,0) scale(1)"/>
+    
+    <!-- LinkedIn -->
+    <circle cx="100" cy="30" r="25" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+    <path d="M100 15c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm-3.5 22.5h-3.5v-10h3.5v10zm-1.8-11.4c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm10.3 11.4h-3.5v-5.6c0-1.3 0-3.1-1.9-3.1s-2.1 1.5-2.1 3v5.7h-3.5v-10h3.3v1.4h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v5h-.1z" fill="white"/>
+
+    <!-- Instagram -->
+    <circle cx="170" cy="30" r="25" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+    <path d="M170 15c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm0 2.7c3.3 0 3.7 0 5 0 .1 0 .2.1.2.2.1 1.8.1 1.5.1 5 0 3.5 0 3.2-.1 5 0 .1-.1.2-.2.2-1.3 0-1.7.1-5 .1s-3.7 0-5-.1c-.1 0-.2-.1-.2-.2-.1-1.8-.1-1.5-.1-5 0-3.5 0-3.2.1-5 0-.1.1-.2.2-.2 1.3 0 1.7 0 5 0zm0 4.3c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 1.3c2 0 3.7 1.7 3.7 3.7s-1.7 3.7-3.7 3.7-3.7-1.7-3.7-3.7 1.7-3.7 3.7-3.7zm5.2-3.8c.7 0 1.2.5 1.2 1.2s-.5 1.2-1.2 1.2-1.2-.5-1.2-1.2.5-1.2 1.2-1.2z" fill="white"/>
+
+    <!-- Discord -->
+    <circle cx="240" cy="30" r="25" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+    <path d="M240 15c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm5.7 21v-.1l-.1-.2s-.8-.9-1.4-1.7c.9-.3 1.4-.7 1.4-.7-.3.2-.6.4-.9.5-.4.2-.8.3-1.1.4-.1 0-.3.1-.4.1-.4.1-.9.2-1.4.2-.9.1-1.9.1-2.9 0-.4 0-.8-.1-1.1-.2-.1 0-.3-.1-.4-.1-.3-.1-.6-.2-.9-.3-.5-.2-1-.4-1.4-.7 0 0 .5.4 1.4.7-.6.8-1.4 1.7-1.4 1.7l-.1.2v.1c0 0 .2 0 .5-.1.9-.3 2.1-.4 3.3-.4 1.2 0 2.4.1 3.3.4.3.1.5.1.5.1zM238.1 27.6c-.7 0-1.3-.6-1.3-1.3s.6-1.3 1.3-1.3 1.3.6 1.3 1.3-.6 1.3-1.3 1.3zm3.7 0c-.7 0-1.3-.6-1.3-1.3s.6-1.3 1.3-1.3 1.3.6 1.3 1.3-.6 1.3-1.3 1.3z" fill="white"/>
+  </g>
+
+  <!-- Embers/Sparks -->
+  <g id="Embers">
+    <circle cx="200" cy="300" r="2" fill="#00FF9C">
+      <animate attributeName="cy" values="300;250;300" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="100" r="1.5" fill="#ffffff">
+      <animate attributeName="cy" values="100;150;100" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="250" r="2" fill="#00FF9C">
+      <animate attributeName="cy" values="250;200;250" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
 
   <defs>
-    <linearGradient id="glass_gradient" x1="0" y1="0" x2="1000" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00FF9C" stop-opacity="0.1"/>
-      <stop offset="1" stop-color="#0A0A0C" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="border_gradient" x1="0" y1="0" x2="1000" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="white" stop-opacity="0.5"/>
-      <stop offset="0.5" stop-color="#00FF9C" stop-opacity="0.2"/>
-      <stop offset="1" stop-color="white" stop-opacity="0.5"/>
+    <linearGradient id="bg_gradient" x1="0" y1="0" x2="1000" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FF9C"/>
+      <stop offset="1" stop-color="#0A0A0C"/>
     </linearGradient>
   </defs>
 </svg>
