@@ -1,8 +1,8 @@
-<svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1600" height="400" viewBox="0 0 1600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Logo Glow -->
     <filter id="logoGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
@@ -14,52 +14,49 @@
     <!-- Neural Energy Gradient -->
     <linearGradient id="neuralFlow" x1="0" y1="0" x2="100%" y2="0">
       <stop offset="0%" stop-color="#00FF9C" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00FF9C" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#00FF9C" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="#00FF9C" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <!-- Deep Matte Background -->
-  <rect width="1600" height="300" fill="#010101"/>
+  <rect width="1600" height="400" fill="#010101"/>
   
   <!-- Moving Energy Flow -->
-  <rect width="1600" height="300" fill="url(#neuralFlow)">
-    <animateTransform attributeName="transform" type="translate" from="-1600 0" to="1600 0" dur="10s" repeatCount="indefinite"/>
+  <rect width="1600" height="400" fill="url(#neuralFlow)">
+    <animateTransform attributeName="transform" type="translate" from="-1600 0" to="1600 0" dur="8s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- YNUB Branding Logo (Top Focused) -->
-  <g transform="translate(800, 140)">
+  <!-- YNUB Branding Logo -->
+  <g transform="translate(800, 180)">
     <!-- Main YNUB Text -->
-    <text text-anchor="middle" fill="white" font-family="sans-serif" font-weight="950" font-size="140" letter-spacing="0.2em" filter="url(#logoGlow)">
+    <text text-anchor="middle" fill="white" font-family="sans-serif" font-weight="950" font-size="160" letter-spacing="0.25em" filter="url(#logoGlow)">
       YNUB
-      <animate attributeName="opacity" values="1;0.85;1" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.8;1" dur="4s" repeatCount="indefinite"/>
     </text>
     
-    <!-- Glitch / Shift Layer -->
-    <text text-anchor="middle" fill="#00FF9C" font-family="sans-serif" font-weight="950" font-size="140" letter-spacing="0.2em" opacity="0.15">
-      YNUB
-      <animateTransform attributeName="transform" type="translate" values="0; 2; 0" dur="0.2s" repeatCount="indefinite"/>
-    </text>
-
-    <!-- Status Sub-label -->
-    <text text-anchor="middle" y="60" fill="#00FF9C" font-family="monospace" font-size="14" font-weight="900" letter-spacing="1.2em" opacity="0.8">
-      ELITE • SECURITY • RESEARCH
-    </text>
+    <!-- Role Labels (Integrated into Banner) -->
+    <g transform="translate(0, 80)">
+      <text text-anchor="middle" fill="#00FF9C" font-family="monospace" font-size="16" font-weight="900" letter-spacing="0.4em" opacity="0.9">
+        PENTESTER • FRONTEND DEV • SECURITY RESEARCHER
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+      </text>
+    </g>
   </g>
 
   <!-- Animated HUD Elements -->
   <g opacity="0.4">
-    <path d="M50 50 L 150 50 M 50 50 L 50 150" stroke="#00FF9C" stroke-width="2"/>
-    <path d="M1550 50 L 1450 50 M 1550 50 L 1550 150" stroke="#00FF9C" stroke-width="2"/>
-    <path d="M50 250 L 150 250 M 50 250 L 50 150" stroke="#00FF9C" stroke-width="2"/>
-    <path d="M1550 250 L 1450 250 M 1550 250 L 1550 150" stroke="#00FF9C" stroke-width="2"/>
+    <path d="M40 40 L 140 40 M 40 40 L 40 140" stroke="#00FF9C" stroke-width="2.5"/>
+    <path d="M1560 40 L 1460 40 M 1560 40 L 1560 140" stroke="#00FF9C" stroke-width="2.5"/>
+    <path d="M40 360 L 140 360 M 40 360 L 40 260" stroke="#00FF9C" stroke-width="2.5"/>
+    <path d="M1560 360 L 1460 360 M 1560 360 L 1560 260" stroke="#00FF9C" stroke-width="2.5"/>
   </g>
 
-  <!-- Vertical Scan Scanning Line -->
-  <rect width="1600" height="1" fill="#00FF9C" opacity="0.2">
-    <animate attributeName="y" from="0" to="300" dur="4s" repeatCount="indefinite"/>
-  </rect>
-
   <!-- Scanning Overlay -->
-  <rect width="1600" height="300" fill="url(#scanlines)" pointer-events="none"/>
+  <rect width="1600" height="400" fill="url(#scanlines)" pointer-events="none"/>
+  
+  <!-- Fast Vertical Scan -->
+  <rect width="1600" height="1.5" fill="#00FF9C" opacity="0.3">
+    <animate attributeName="y" from="-10" to="410" dur="5s" repeatCount="indefinite"/>
+  </rect>
 </svg>
