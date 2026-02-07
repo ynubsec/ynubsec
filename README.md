@@ -13,16 +13,6 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C&text_color=ffffff" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C&text_color=ffffff" height="170" />
-</div>
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=dark&hide_border=true&ring=00FF9C&fire=00FF9C&currStreakNum=00FF9C&sideNums=ffffff" height="170" />
-</div>
-
-<br>
-
-<div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=⚡%20TECHNICAL%20ARSENAL&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
 </div>
 
@@ -38,16 +28,6 @@
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ynubsec&bg_color=0a0a0c&color=00FF9C&line=00FF9C&point=FFFFFF&area=true&hide_border=true" width="100%" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=🐍%20CONTRIBUTION%20STREAM&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" />
 </div>
 
 <br>
