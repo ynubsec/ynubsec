@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/ynubsec-animated.svg" alt="YNUBSEC MASTER BANNER" width="100%" />
+  <img src="https://ynubsec.vercel.app/ynubsec-animated.svg" alt="YNUBSEC MASTER BANNER" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/bio_card.svg" alt="YNUBSEC BIO" width="100%" />
+  <img src="https://ynubsec.vercel.app/bio_card.svg" alt="YNUBSEC BIO" width="100%" />
 </div>
 
 <div align="center">
@@ -13,11 +13,11 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=neon&hide_border=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=neon&hide_border=true" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=neon&hide_border=true" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=neon&hide_border=true" height="180" />
 </div>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=neon&hide_border=true" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=neon&hide_border=true" height="180" />
 </div>
 
 <br>
