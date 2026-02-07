@@ -13,11 +13,11 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=vision-friendly-dark&title_color=00FF9C&icon_color=00FF9C&hide_border=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=vision-friendly-dark&title_color=00FF9C&icon_color=00FF9C&hide_border=true" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=dark&title_color=00FF9C&icon_color=00FF9C&text_color=ffffff&bg_color=0d1117&hide_border=true" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=dark&title_color=00FF9C&icon_color=00FF9C&text_color=ffffff&bg_color=0d1117&hide_border=true" height="180" />
 </div>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=vision-friendly-dark&hide_border=true&ring=00FF9C&fire=00FF9C&currStreakNum=00FF9C" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=dark&hide_border=true&ring=00FF9C&fire=00FF9C&currStreakNum=00FF9C&sideNums=ffffff&background=0d1117" height="180" />
 </div>
 
 <br>
