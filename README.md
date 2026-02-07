@@ -1,11 +1,10 @@
-
-<h4 align="left">Hi, my name is Bishnu Neupane, known as ynub online.<br>I’m an 18-year-old student developer from Nepal with a strong interest in cybersecurity.<br><br>I focus on Linux, web internals, networking, and secure code, and I learn by breaking<br>things apart to understand systems from first principles.</h4>
-
-###
-
 <div>
   <img style="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=cobalt"  />
 </div>
+
+###
+
+<h4 align="left">Hi, my name is Bishnu Neupane, known as ynub online.<br>I’m an 18-year-old student developer from Nepal with a strong interest in cybersecurity.<br><br>I focus on Linux, web internals, networking, and secure code, and I learn by breaking<br>things apart to understand systems from first principles.</h4>
 
 ###
 
@@ -82,7 +81,7 @@
   <a href="https://x.com/ynubsec" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
   </a>
-  <a href="https://discord.com/ynubsec" target="_blank">
+  <a href="https://discord.com/channels/@me/687219779718742034" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" height="40" alt="discord logo"  />
   </a>
   <a href="https://youtube.com/ynubsec" target="_blank">
@@ -91,12 +90,6 @@
   <a href="https://medium.com/@ynubsec" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/medium/default.svg" width="52" height="40" alt="medium logo"  />
   </a>
-</div>
-
-###
-
-<div>
-  <img style="100%" src="https://capsule-render.vercel.app/api?type=rounded&height=98&section=header&reversal=false&fontSize=50&fontColor=FFFFFF&fontAlign=20&fontAlignY=50&stroke=FFFFFF&strokeWidth=10&animation=twinkling&desc=Thank%20You&descSize=50&descAlign=50&descAlignY=50&textBg=false&color=gradient"  />
 </div>
 
 ###
