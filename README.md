@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://ynubsec.vercel.app/ynubsec-animated.svg" alt="YNUBSEC MASTER BANNER" width="100%" />
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/ynubsec-animated.svg" alt="YNUBSEC MASTER BANNER" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://ynubsec.vercel.app/bio_card.svg" alt="YNUBSEC BIO" width="100%" />
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/bio_card.svg" alt="YNUBSEC BIO" width="100%" />
 </div>
 
 <div align="center">
@@ -13,11 +13,11 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=neon&hide_border=true" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=neon&hide_border=true" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C&text_color=ffffff" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C&text_color=ffffff" height="170" />
 </div>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=neon&hide_border=true" height="180" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=dark&hide_border=true&ring=00FF9C&fire=00FF9C&currStreakNum=00FF9C&sideNums=ffffff" height="170" />
 </div>
 
 <br>
@@ -27,7 +27,7 @@
 </div>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=linux,bash,python,c,js,html,css,react,nodejs,postgres,git,github,vscode,debian,docker,ubuntu" />
+  <img src="https://skillicons.dev/icons?i=linux,bash,python,c,js,html,css,react,nodejs,postgres,git,github,vscode,debian,discord,postman,docker,ubuntu" />
 </div>
 
 <br>
