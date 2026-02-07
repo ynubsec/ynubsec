@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./banner.svg" alt="YNUBSEC HEADER" width="100%" />
+  <object type="image/svg+xml" data="./ynubsec-animated.svg" width="100%"></object>
 </div>
 
 <div align="center">
