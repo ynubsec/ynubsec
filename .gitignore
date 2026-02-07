@@ -1,12 +1,21 @@
-# Professional Gitignore for Hacker/Dev Portfolio
-# Node.js
+# Professional Gitignore for Security Research Portfolio
+
+# ====================
+# Node.js Ecosystem
+# ====================
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+.nyc_output/
+coverage/
+.nyc_output/
+*.tsbuildinfo
 
-# Python
+# ====================
+# Python Ecosystem
+# ====================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -27,18 +36,178 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.pytest_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nox/
 
-# Reports & Logs
-reports/*.log
+# ====================
+# Security Research
+# ====================
+# Sensitive Data
+*.key
+*.pem
+*.crt
+*.cert
+*.p12
+*.pfx
+secrets/
+credentials/
+config/secrets/
+.env.local
+.env.*.local
+
+# Scan Results
+scans/
+reports/
+findings/
+vulnerabilities/
+*.nessus
+*.nmap
+*.xml
+
+# Exploit Code
+exploits/
+payloads/
+shells/
+reverse_shells/
+
+# ====================
+# Development Tools
+# ====================
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Editors
+*.tmp
+*.temp
+
+# ====================
+# Build and Output
+# ====================
+bin/
+obj/
+out/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.out
+*.class
+*.jar
+*.war
+*.ear
+
+# ====================
+# Logs and Cache
+# ====================
+logs/
+*.log
 *.cache
+.cache/
+.tmp/
+temp/
+.DS_Store
+Thumbs.db
 
+# ====================
 # Environment
+# ====================
 .env
 .venv
 env/
 venv/
 ENV/
+.conda/
 
-# OS
+# ====================
+# OS Specific
+# ====================
+# Windows
+*.lnk
+
+# Linux
+*~
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# ====================
+# Package Managers
+# ====================
+# Composer
+composer.phar
+vendor/
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# ====================
+# Testing
+# ====================
+test-results/
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts
+
+# ====================
+# Documentation
+# ====================
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+
+# ====================
+# Docker
+# ====================
+.docker/
+docker-compose.override.yml
+
+# ====================
+# Cloud
+# ====================
+.terraform/
+terraform.tfstate*
+*.tfvars
+
+# ====================
+# Miscellaneous
+# ====================
+*.bak
+*.backup
+.DS_Store?
+ehthumbs.db
 Thumbs.db
+
+# Security Tools Output
+nuclei-output/
+subfinder-output/
+amass-output/
+
