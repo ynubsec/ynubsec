@@ -6,74 +6,100 @@
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <!-- Scanline Effect -->
+    <!-- Glitch Displacement Filter -->
+    <filter id="glitch">
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="original"/>
+      <feOffset dx="-2" dy="2" result="offset1">
+        <animate attributeName="dx" values="-2;2;-1;0" dur="0.2s" repeatCount="indefinite" begin="0s"/>
+      </feOffset>
+      <feOffset dx="2" dy="-2" result="offset2">
+        <animate attributeName="dx" values="2;-2;1;0" dur="0.2s" repeatCount="indefinite" begin="0s"/>
+      </feOffset>
+      <feComposite in="offset1" in2="offset2" operator="xor"/>
+    </filter>
+
+    <!-- Scanline Pattern -->
     <pattern id="scanlines" width="100%" height="4" patternUnits="userSpaceOnUse">
-      <rect width="100%" height="1" fill="white" fill-opacity="0.03"/>
+      <rect width="100%" height="1" fill="white" fill-opacity="0.04"/>
     </pattern>
 
     <!-- Moving Fog Gradient -->
     <linearGradient id="fogShift" x1="0" y1="0" x2="100%" y2="0">
       <stop offset="0%" stop-color="#00FF9C" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00FF9C" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#00FF9C" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#00FF9C" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Floating Spark -->
     <circle id="spark" r="1.5" fill="#00FF9C">
       <animate attributeName="cy" from="520" to="-20" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.8;0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="8s" repeatCount="indefinite"/>
     </circle>
   </defs>
 
   <!-- Solid Void Background -->
-  <rect width="1600" height="500" fill="#020202"/>
+  <rect width="1600" height="500" fill="#010101"/>
   
   <!-- Atmospheric Fog Animation -->
   <rect width="1600" height="500" fill="url(#fogShift)">
-    <animateTransform attributeName="transform" type="translate" from="-1600 0" to="1600 0" dur="15s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" from="-1600 0" to="1600 0" dur="12s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- YNUB Power Core -->
-  <g transform="translate(800, 240)" filter="url(#eliteGlow)">
-    <text text-anchor="middle" fill="white" font-family="'Segoe UI', Roboto, sans-serif" font-weight="950" font-size="160" letter-spacing="0.1em">YNUB</text>
-    <!-- Breathing Outer Glow -->
-    <text text-anchor="middle" fill="#00FF9C" font-family="'Segoe UI', Roboto, sans-serif" font-weight="950" font-size="160" letter-spacing="0.1em" opacity="0.3">
-      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="4s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="scale" values="1;1.02;1" dur="4s" repeatCount="indefinite" additive="sum"/>
+  <!-- YNUB Core with Glitch Effect -->
+  <g transform="translate(800, 240)">
+    <!-- Main Text -->
+    <text text-anchor="middle" fill="white" font-family="sans-serif" font-weight="900" font-size="160" letter-spacing="0.1em" filter="url(#eliteGlow)">
+      YNUB
+      <animate attributeName="opacity" values="1;0.9;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- Glitch Overlay -->
+    <text text-anchor="middle" fill="#00FF9C" font-family="sans-serif" font-weight="900" font-size="160" letter-spacing="0.1em" opacity="0">
+      YNUB
+      <animate attributeName="opacity" values="0;0.4;0" dur="5s" repeatCount="indefinite" begin="2s"/>
+      <animateTransform attributeName="transform" type="translate" values="0;2;0" dur="0.1s" repeatCount="indefinite" begin="2s"/>
+    </text>
+
+    <!-- Breathing Halo -->
+    <text text-anchor="middle" fill="#00FF9C" font-family="sans-serif" font-weight="900" font-size="160" letter-spacing="0.1em" opacity="0.1">
+      <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="scale" values="1;1.03;1" dur="4s" repeatCount="indefinite" additive="sum"/>
     </text>
   </g>
 
   <!-- HUD Interface Elements -->
-  <g opacity="0.4">
-    <path d="M50 50 L 150 50 M 50 50 L 50 150" stroke="#00FF9C" stroke-width="2"/>
-    <path d="M1550 50 L 1450 50 M 1550 50 L 1550 150" stroke="#00FF9C" stroke-width="2"/>
-    <path d="M50 450 L 150 450 M 50 450 L 50 350" stroke="#00FF9C" stroke-width="2"/>
-    <path d="M1550 450 L 1450 450 M 1550 450 L 1550 350" stroke="#00FF9C" stroke-width="2"/>
+  <g opacity="0.3">
+    <path d="M40 40 L 140 40 M 40 40 L 40 140" stroke="#00FF9C" stroke-width="2"/>
+    <path d="M1560 40 L 1460 40 M 1560 40 L 1560 140" stroke="#00FF9C" stroke-width="2"/>
+    <path d="M40 460 L 140 460 M 40 460 L 40 360" stroke="#00FF9C" stroke-width="2"/>
+    <path d="M1560 460 L 1460 460 M 1560 460 L 1560 360" stroke="#00FF9C" stroke-width="2"/>
   </g>
 
-  <!-- Technical Overlay Status -->
-  <g transform="translate(80, 80)">
-    <text fill="#00FF9C" font-family="monospace" font-size="12" font-weight="700">SRV_STATUS: ENCRYPTED</text>
-    <text y="20" fill="#00FF9C" font-family="monospace" font-size="12" font-weight="700">ACCESS_LEVEL: ELITE_OPERATIVE</text>
-  </g>
-
-  <!-- Operative Silhouette (Enhanced Cinematic) -->
-  <g transform="translate(1100, 0)">
-    <!-- Main Body -->
-    <path d="M500 500 L 0 500 C 50 380, 100 250, 180 150 Q 250 80, 500 130 Z" fill="#080808"/>
-    <!-- Glowing Visor (Pro Hacker Eye) -->
-    <rect x="260" y="220" width="70" height="3" rx="1.5" fill="#00FF9C">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  <!-- Operative Silhouette -->
+  <g transform="translate(1150, 0)">
+    <path d="M450 500 L 0 500 C 50 380, 100 250, 180 150 Q 250 80, 450 130 Z" fill="#050505"/>
+    <!-- Glowing Visor -->
+    <rect x="260" y="220" width="75" height="4" rx="2" fill="#00FF9C">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="75;80;75" dur="3s" repeatCount="indefinite"/>
     </rect>
-    <!-- Secondary Tech Glow -->
-    <path d="M220 300 Q 250 320, 220 380" stroke="#00FF9C" stroke-width="1.5" stroke-opacity="0.1"/>
+  </g>
+
+  <!-- Fast Data Stream (Right Side) -->
+  <g transform="translate(1450, 200)" opacity="0.2">
+    <text fill="#00FF9C" font-family="monospace" font-size="10">
+      <tspan x="0" y="0">0101101</tspan>
+      <tspan x="0" y="15">1101001</tspan>
+      <tspan x="0" y="30">1011010</tspan>
+      <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+    </text>
   </g>
 
   <!-- Floating Embers -->
   <use href="#spark" x="200" dur="10s"/>
-  <use href="#spark" x="600" dur="7s"/>
-  <use href="#spark" x="900" dur="12s"/>
-  <use href="#spark" x="1300" dur="9s"/>
+  <use href="#spark" x="500" dur="6s"/>
+  <use href="#spark" x="800" dur="15s"/>
+  <use href="#spark" x="1200" dur="8s"/>
 
   <!-- Scanning Overlay -->
   <rect width="1600" height="500" fill="url(#scanlines)" pointer-events="none"/>

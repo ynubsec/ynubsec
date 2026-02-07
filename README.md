@@ -13,7 +13,7 @@
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=60&section=header&text=⚡%20TECHNICAL%20ARSENAL&fontSize=30&theme=dark&fontColor=00FF9C&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=60&section=header&text=⚡%20TECHNICAL%20ARSENAL&fontSize=30&theme=dark&fontColor=00FF9C&animation=twinkling" width="100%" />
 </div>
 
 <div align="center">
@@ -23,7 +23,7 @@
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=60&section=header&text=📊%20NEURAL%20ACTIVITY&fontSize=30&theme=dark&fontColor=00FF9C&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=60&section=header&text=📊%20NEURAL%20ACTIVITY&fontSize=30&theme=dark&fontColor=00FF9C&animation=twinkling" width="100%" />
 </div>
 
 <div align="center">
