@@ -1,107 +1,48 @@
 <svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <!-- Cinematic Glow -->
-    <filter id="ultraGlow">
-      <feGaussianBlur stdDeviation="15" result="blur"/>
+    <!-- Premium Soft Glow -->
+    <filter id="premiumGlow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Hacker Glitch Filter -->
-    <filter id="glitch">
-      <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="red"/>
-      <feOffset in="red" dx="3" dy="0" result="redOffset">
-        <animate attributeName="dx" values="0;3;-3;0" dur="0.2s" repeatCount="indefinite" begin="4s;8s;12s" />
-      </feOffset>
-      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="cyan"/>
-      <feOffset in="cyan" dx="-3" dy="0" result="cyanOffset">
-        <animate attributeName="dx" values="0;-3;3;0" dur="0.2s" repeatCount="indefinite" begin="4s;8s;12s" />
-      </feOffset>
-      <feMerge>
-        <feMergeNode in="redOffset"/>
-        <feMergeNode in="cyanOffset"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Scanline Pattern -->
-    <pattern id="scanlines" width="1600" height="4" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="1600" y2="0" stroke="white" stroke-opacity="0.05" stroke-width="1"/>
-    </pattern>
-
-    <!-- Drifting Data Node -->
-    <circle id="node" r="1.5" fill="#00FF9C" fill-opacity="0.3">
-      <animate attributeName="opacity" values="0;0.5;0" dur="5s" repeatCount="indefinite"/>
+    <!-- Floating ember -->
+    <circle id="ember" r="2.5" fill="#FFC107">
+      <animate attributeName="cy" from="550" to="-50" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="8s" repeatCount="indefinite"/>
     </circle>
   </defs>
 
-  <!-- Deep Black Base -->
+  <!-- Solid Deep Black Background -->
   <rect width="1600" height="500" fill="#000000"/>
-  
-  <!-- Drifting Data Nodes Grid -->
-  <g id="DataField">
-    <use href="#node" x="200" y="100"/>
-    <use href="#node" x="400" y="300" dur="4s"/>
-    <use href="#node" x="800" y="150" dur="6s"/>
-    <use href="#node" x="1200" y="400" dur="3s"/>
-    <use href="#node" x="1400" y="100" dur="7s"/>
-    <animateTransform attributeName="transform" type="translate" from="0 0" to="-100 -50" dur="20s" repeatCount="indefinite"/>
+
+  <!-- Clean, Pulsing "YNUB" Logo -->
+  <g transform="translate(800, 250)" filter="url(#premiumGlow)">
+      <text text-anchor="middle" fill="white" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="160" letter-spacing="0.1em">YNUB</text>
+      <!-- Subtle Breathing Animation -->
+      <text text-anchor="middle" fill="white" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="160" letter-spacing="0.1em" opacity="0.2">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="5s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="scale" values="1;1.02;1" dur="5s" repeatCount="indefinite" additive="sum"/>
+      </text>
   </g>
 
-  <!-- Scanline Overlay -->
-  <rect width="1600" height="500" fill="url(#scanlines)" pointer-events="none"/>
+  <!-- Interactive Embers (Clean & Cinematic) -->
+  <use href="#ember" x="100" dur="10s"/>
+  <use href="#ember" x="350" dur="7s"/>
+  <use href="#ember" x="650" dur="12s"/>
+  <use href="#ember" x="950" dur="8s"/>
+  <use href="#ember" x="1250" dur="6s"/>
+  <use href="#ember" x="1500" dur="11s"/>
 
-  <!-- Main "YNUB" Logo with Glitch & Pulse -->
-  <g transform="translate(800, 220)" filter="url(#ultraGlow)">
-      <g filter="url(#glitch)">
-        <text text-anchor="middle" fill="white" font-family="'Inter', sans-serif" font-weight="900" font-size="140" letter-spacing="0.2em">YNUB</text>
-      </g>
-      <!-- Subtle Tech Flicker -->
-      <rect x="-300" y="-100" width="600" height="200" fill="white" fill-opacity="0">
-        <animate attributeName="fill-opacity" values="0;0.05;0;0.08;0" dur="5s" repeatCount="indefinite"/>
-      </rect>
-  </defs>
-
-  <!-- Social Row -->
-  <g transform="translate(620, 420)" opacity="0.6">
-    <g transform="translate(0, 0)">
-       <path d="M10 0c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" fill="white" transform="scale(0.8) translate(0,-4)"/>
-       <text x="25" y="12" fill="white" font-family="monospace" font-size="18">ynubsec</text>
-    </g>
-    <g transform="translate(180, 0)">
-       <rect x="0" y="-2" width="18" height="18" rx="4" stroke="white" stroke-width="1.5" fill="none"/>
-       <text x="28" y="12" fill="white" font-family="monospace" font-size="18">ynubsec</text>
-    </g>
-    <g transform="translate(360, 0)">
-       <circle cx="10" cy="8" r="10" stroke="white" stroke-width="1.5" fill="none"/>
-       <text x="30" y="12" fill="white" font-family="monospace" font-size="18">ynubsec</text>
-    </g>
-  </g>
-
-  <!-- Character Silhouette Detail on the right -->
-  <g id="CharacterZone" transform="translate(1100, 0)">
+  <!-- Subtle Character Silhouette on the far right -->
+  <g id="CharacterZone" transform="translate(1200, 0)" opacity="0.6">
     <path d="M200 500 L 0 500 C 0 300, 50 150, 150 100 Q 250 50, 450 100 L 450 500 Z" fill="#0A0A0C"/>
-    <!-- The glowing yellow 'slit' eye with pulse -->
-    <rect x="280" y="220" width="40" height="8" rx="4" fill="#00FF9C">
-      <animate attributeName="fill" values="#00FF9C;#FFC107;#00FF9C" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    <!-- Glowing Eye Slit -->
+    <rect x="260" y="240" width="50" height="6" rx="3" fill="#FFC107">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
     </rect>
-  </g>
-
-  <!-- Upward Rising Particles -->
-  <g>
-    <circle r="1" fill="white" opacity="0.3">
-      <animate attributeName="cx" values="200;205;200" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="cy" from="500" to="-20" dur="10s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="1.5" fill="#00FF9C" opacity="0.2">
-      <animate attributeName="cx" values="800;790;800" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="cy" from="500" to="-20" dur="7s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="1" fill="white" opacity="0.1" cx="1400">
-      <animate attributeName="cy" from="500" to="-20" dur="12s" repeatCount="indefinite"/>
-    </circle>
   </g>
 </svg>
