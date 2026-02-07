@@ -9,7 +9,7 @@
   <!-- Left Side: Identity -->
   <g transform="translate(60, 60)">
     <text fill="white" font-family="sans-serif" font-size="42" font-weight="900" letter-spacing="-0.02em">Bishnu Neupane</text>
-    <text y="35" fill="#00FF9C" font-family="monospace" font-size="14" font-weight="700" letter-spacing="0.1em">SECURITY RESEARCHER • FULL-STACK DEV</text>
+    <text y="35" fill="#00FF9C" font-family="monospace" font-size="14" font-weight="700" letter-spacing="0.1em">SECURITY RESEARCHER • FRONTEND DEV • PENTESTER</text>
     
     <!-- Status Indicator -->
     <g transform="translate(0, 65)">
@@ -26,15 +26,15 @@
     <!-- Pillar 1 -->
     <g>
       <path d="M0 0 L 10 0" stroke="#00FF9C" stroke-width="2"/>
-      <text x="25" y="5" fill="#E6EDF3" font-family="sans-serif" font-size="16" font-weight="600">Offensive Security &amp; Red Teaming</text>
+      <text x="25" y="5" fill="#E6EDF3" font-family="sans-serif" font-size="16" font-weight="600">Offensive Security &amp; Pentesting</text>
       <text x="25" y="25" fill="#8B949E" font-family="sans-serif" font-size="13">Exploit development and system research.</text>
     </g>
     
     <!-- Pillar 2 -->
     <g transform="translate(0, 60)">
       <path d="M0 0 L 10 0" stroke="#00FF9C" stroke-width="2"/>
-      <text x="25" y="5" fill="#E6EDF3" font-family="sans-serif" font-size="16" font-weight="600">Full-Stack System Architecture</text>
-      <text x="25" y="25" fill="#8B949E" font-family="sans-serif" font-size="13">Building secure, scalable digital ecosystems.</text>
+      <text x="25" y="5" fill="#E6EDF3" font-family="sans-serif" font-size="16" font-weight="600">Frontend Development &amp; UI UX</text>
+      <text x="25" y="25" fill="#8B949E" font-family="sans-serif" font-size="13">Building secure, high-performance interfaces.</text>
     </g>
     
     <!-- Pillar 3 -->
