@@ -1,95 +1,85 @@
-<div>
-  <img style="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=cobalt"  />
+<div align="center">
+  <!-- USER LOGO SLOT: Place your brush-style logo at ./logo.png to see it here -->
+  <img src="logo.png" width="400" alt="YNUBSEC" onerror="this.src='https://capsule-render.vercel.app/api?type=waving&height=280&section=header&text=YNUBSEC&fontSize=90&theme=dark&fontAlignY=35&animation=twinkling&fontColor=00FF9C'"/>
 </div>
-
-###
-
-<h4 align="left">Hi, my name is Bishnu Neupane, known as ynub online.<br>I’m an 18-year-old student developer from Nepal with a strong interest in cybersecurity.<br><br>I focus on Linux, web internals, networking, and secure code, and I learn by breaking<br>things apart to understand systems from first principles.</h4>
-
-###
-
-<br clear="both">
-
-<img align="left" height="244" src="https://tse2.mm.bing.net/th/id/OIP.c2_-xdj3CT5-kP0cUEt5HwHaPI?rs=1&pid=ImgDetMain&o=7&rm=3"  />
-
-###
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="c logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="github logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" alt="bash logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" height="30" alt="debian logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height="30" alt="visualstudio logo"  />
+  <h2 style="border-bottom: none;">⚡ [ COMMAND_CENTER_INITIALIZED ] ⚡</h2>
+  <p><b>Advanced Security Researcher | Red Team Specialist | Full-Stack Security Engineer</b></p>
+  <p><i>"Breaking the unbreakable, one byte at a time."</i></p>
 </div>
 
-###
+---
 
-<div align="left">
-  <a href="https://youtube.com/@ynubsec" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="youtube logo"  />
-  </a>
-  <a href="https://instagram.com/ynubsec" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-  </a>
-  <a href="https://discord.com/ynubsec" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
-  </a>
-  <a href="ynubsec@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
-  </a>
-  <a href="https://linkedin.com/in/ynubsec" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-  </a>
+### 🌐 [ SYSTEM_STATUS: ACTIVE ]
+
+<p align="left">
+  Greetings. I am <b>Bishnu Neupane</b>, a.k.a <b>ynub</b>. I specialize in offensive security and systems architecture. My methodology is rooted in first-principles thinking—understanding the core of any system before attempting to manipulate its boundaries.
+</p>
+
+- 🎯 **Primary Objectives**: Exploit Research, Secure Logic Implementation, & Network Stealth.
+- 🛠️ **Current Projects**: Custom Security Tooling & Vulnerability Research Frameworks.
+- 📡 **Active Research**: Cloud Infrastructure Misconfigurations & Zero-Trust Architecture.
+- 💬 **Communication**: PGP-preferred for sensitive discussions (available on request).
+
+---
+
+### 🛡️ [ CYBERSECURITY_LAB ]
+
+| Project | Focus | Status |
+| :--- | :--- | :--- |
+| **[Vanguard-Scanner](./tools/scanner.py)** | Protocol analysis & enumeration demo. | `ALPHA` |
+| **Stealth-Root** | Minimalist privilege escalation research. | `DEVELOPMENT` |
+| **Aero-Sniff** | Advanced wireless packet injection framework. | `RESEARCH` |
+
+---
+
+### 💻 [ TECHNICAL ARSENAL ]
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Language-C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framework-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/OS-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Tools-Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tools-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Database-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
 </div>
 
-###
+<br>
 
-<div>
-  <img style="100%" src="https://capsule-render.vercel.app/api?type=blur&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=cobalt"  />
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=vision-friendly-dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C" alt="Most Used Languages" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=vision-friendly-dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C" alt="GitHub Stats" height="150" />
 </div>
 
-###
+---
 
-<img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Snake animation" />
+### 🏆 [ MISSION LOGS & TROPHIES ]
 
-###
-
-<div align="left">
-  <a href="https://linkedin.com/in/ynubsec" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://x.com/ynubsec" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
-  </a>
-  <a href="https://discord.com/channels/@me/687219779718742034" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" height="40" alt="discord logo"  />
-  </a>
-  <a href="https://youtube.com/ynubsec" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="52" height="40" alt="youtube logo"  />
-  </a>
-  <a href="https://medium.com/@ynubsec" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/medium/default.svg" width="52" height="40" alt="medium logo"  />
-  </a>
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=ynubsec&theme=dracula&no-bg=true&column=4&margin-w=15&margin-h=15" />
 </div>
 
-###
+---
+
+### 📡 [ TRANSMISSION CHANNELS ]
+
+<div align="center">
+  <a href="https://linkedin.com/in/ynubsec"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://x.com/ynubsec"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" /></a>
+  <a href="https://youtube.com/@ynubsec"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
+  <a href="https://discord.com/users/687219779718742034"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /></a>
+  <a href="mailto:ynubsec@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Snake animation" width="100%" />
+</div>
+
+<div align="center">
+  <i>"In the world of security, curiosity is the strongest firewall."</i>
+</div>
