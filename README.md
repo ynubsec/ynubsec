@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=280&section=header&text=YNUBSEC&fontSize=90&theme=dark&fontAlignY=35&animation=twinkling&fontColor=00FF9C" />
+  <img src="./banner.svg" alt="YNUBSEC MASTERPIECE BANNER" width="100%" />
 </div>
 
 <div align="center">
