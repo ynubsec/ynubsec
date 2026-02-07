@@ -1,23 +1,17 @@
 <div align="center">
-  <img src="./banner.svg" alt="YNUBSEC MASTERPIECE BANNER" width="100%" />
+  <img src="./banner.svg" alt="YNUBSEC GLASS BANNED" width="100%" />
 </div>
 
 <div align="center">
-  <h1>👋 Hi, I'm <a href="https://linkedin.com/in/ynubsec">Bishnu Neupane</a></h1>
+  <h1>👋 Hi, I'm Bishnu Neupane</h1>
   <h3>⚡ Security Researcher | Red Team Enthusiast | Full-Stack Dev</h3>
-  
-  <p align="center">
-    <img src="https://img.shields.io/badge/Age-18-00FF9C?style=flat-square&logoColor=white" />
-    <img src="https://img.shields.io/badge/Location-Nepal-00FF9C?style=flat-square&logoColor=white" />
-    <img src="https://komarev.com/ghpvc/?username=ynubsec&color=00FF9C&style=flat-square&label=PROFILE+VIEWS" />
-  </p>
 </div>
 
 ---
 
 ### 🛡️ [ SYSTEM_LOGS ]
 
-> "Learning by breaking, securing by understanding."
+"Learning by breaking, securing by understanding."
 
 I am an 18-year-old student developer from Nepal with a profound interest in **Cybersecurity**. I specialize in Linux, web internals, networking, and secure code. I believe in learning by dissecting systems from first principles to truly understand how they work.
 
@@ -52,14 +46,6 @@ I am an 18-year-old student developer from Nepal with a profound interest in **C
 
 ---
 
-### 🏆 [ MISSION_TROPHIES ]
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ynubsec&theme=dracula&no-bg=true&column=4&margin-w=15&margin-h=15" />
-</div>
-
----
-
 ### 📡 [ TRANSMISSION_CHANNELS ]
 
 <div align="center">
@@ -68,7 +54,6 @@ I am an 18-year-old student developer from Nepal with a profound interest in **C
   <a href="https://youtube.com/@ynubsec"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
   <a href="https://discord.com/users/687219779718742034"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /></a>
   <a href="https://instagram.com/ynubsec"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-  <a href="https://medium.com/@ynubsec"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" /></a>
   <a href="mailto:ynubsec@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </div>
 
@@ -77,7 +62,6 @@ I am an 18-year-old student developer from Nepal with a profound interest in **C
 <div align="center">
   <a href="https://www.buymeacoffee.com/ynubsec"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40" /></a>
 </div>
-
 
 ---
 
