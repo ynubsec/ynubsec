@@ -1,0 +1,46 @@
+<svg width="1000" height="350" viewBox="0 0 1000 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Glass Window Base -->
+  <rect x="2" y="2" width="996" height="346" rx="20" fill="#0A0A0C" fill-opacity="0.6"/>
+  <rect x="2" y="2" width="996" height="346" rx="20" fill="url(#glass_overlay)" fill-opacity="0.2"/>
+  <rect x="2.5" y="2.5" width="995" height="345" rx="19.5" stroke="url(#border_grad)" stroke-opacity="0.3"/>
+  
+  <!-- System Label -->
+  <rect x="40" y="30" width="120" height="24" rx="12" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1"/>
+  <text fill="#00FF9C" font-family="monospace" font-size="10" font-weight="700" letter-spacing="0.1em"><tspan x="55" y="46">SYSTEM_INTEGRITY</tspan></text>
+
+  <!-- Typography -->
+  <text fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="-0.02em"><tspan x="40" y="90">Bishnu Neupane</tspan></text>
+  <text fill="#8B949E" font-family="sans-serif" font-size="16" font-weight="500"><tspan x="40" y="115">Security Researcher | Red Team Enthusiast | Full-Stack Developer</tspan></text>
+  
+  <!-- Content Paragraph -->
+  <text fill="#E0E0E0" font-family="sans-serif" font-size="14" line-height="24">
+    <tspan x="40" y="160">Building on the principle: "Learning by breaking, securing by understanding."</tspan>
+    <tspan x="40" y="186">I am an 18-year-old student researcher from Nepal with a profound focus on Linux kernels, web internals,</tspan>
+    <tspan x="40" y="206">and offensive security. My methodology involves dissecting complex systems from first principles to</tspan>
+    <tspan x="40" y="226">identify vulnerabilities and implement robust defense logic.</tspan>
+  </text>
+
+  <!-- Operations List -->
+  <g opacity="0.9">
+    <circle cx="45" cy="265" r="3" fill="#00FF9C"/>
+    <text fill="#B0B0B0" font-family="monospace" font-size="13"><tspan x="60" y="269">CURRENT_OPERATIONS : Advanced Security Tooling &amp; Exploitation Research</tspan></text>
+    
+    <circle cx="45" cy="290" r="3" fill="#00FF9C"/>
+    <text fill="#B0B0B0" font-family="monospace" font-size="13"><tspan x="60" y="294">MISSION_OBJECTIVE  : Deep-Diving Cloud Security &amp; Stealth Architectures</tspan></text>
+    
+    <circle cx="45" cy="315" r="3" fill="#00FF9C"/>
+    <text fill="#B0B0B0" font-family="monospace" font-size="13"><tspan x="60" y="319">DATA_EXCHANGE     : Open for queries on Linux, Python, or Network Logic</tspan></text>
+  </g>
+
+  <defs>
+    <linearGradient id="glass_overlay" x1="0" y1="0" x2="1000" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FF9C" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="border_grad" x1="0" y1="0" x2="1000" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="#00FF9C" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="white" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+</svg>
