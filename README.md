@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/ynubsec-animated.svg" alt="YNUBSEC MASTER BANNER" width="100%" />
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/ynubsec-animated.svg" alt="YNUBSEC ELITE BANNER" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/bio_card.svg" alt="YNUBSEC BIO" width="100%" />
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/bio_card.svg" alt="YNUBSEC CORE BIO" width="100%" />
 </div>
 
 <div align="center">
@@ -13,7 +13,7 @@
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=⚡%20TECHNICAL%20ARSENAL&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=60&section=header&text=⚡%20TECHNICAL%20ARSENAL&fontSize=30&theme=dark&fontColor=00FF9C&animation=fadeIn" width="100%" />
 </div>
 
 <div align="center">
@@ -23,7 +23,7 @@
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=📊%20ACTIVITY%20GRAPH&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=60&section=header&text=📊%20NEURAL%20ACTIVITY&fontSize=30&theme=dark&fontColor=00FF9C&animation=fadeIn" width="100%" />
 </div>
 
 <div align="center">
@@ -33,17 +33,7 @@
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=�%20CONTRIBUTION%20STREAM&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=50&section=header&text=�📬%20CONTACT%20GATEWAY&fontSize=25&theme=dark&fontColor=00FF9C" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=60&section=header&text=📬%20SECURE%20GATEWAY&fontSize=30&theme=dark&fontColor=00FF9C&animation=fadeIn" width="100%" />
 </div>
 
 <div align="center">
