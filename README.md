@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="ynubsec-animated.svg" alt="YNUBSEC MASTER BANNER" width="100%" />
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/ynubsec-animated.svg" alt="YNUBSEC MASTER BANNER" width="100%" />
 </div>
 
 <div align="center">
-  <img src="bio_card.svg" alt="YNUBSEC BIO" width="100%" />
+  <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/main/bio_card.svg" alt="YNUBSEC BIO" width="100%" />
 </div>
 
 <div align="center">
@@ -13,11 +13,11 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C&text_color=ffffff" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=dark&hide_border=true&title_color=00FF9C&icon_color=00FF9C&text_color=ffffff" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ynubsec&show_icons=true&theme=vision-friendly-dark&title_color=00FF9C&icon_color=00FF9C&hide_border=true" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ynubsec&layout=compact&theme=vision-friendly-dark&title_color=00FF9C&icon_color=00FF9C&hide_border=true" height="170" />
 </div>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=dark&hide_border=true&ring=00FF9C&fire=00FF9C&currStreakNum=00FF9C&sideNums=ffffff" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ynubsec&theme=vision-friendly-dark&hide_border=true&ring=00FF9C&fire=00FF9C&currStreakNum=00FF9C" height="170" />
 </div>
 
 <br>
@@ -47,7 +47,6 @@
 </div>
 
 <div align="center">
-  <!-- Fallback to a clear masterpiece banner if the snake is still syncing -->
   <img src="https://raw.githubusercontent.com/ynubsec/ynubsec/output/snake.svg" alt="Contribution Stream" width="100%" />
 </div>
 
